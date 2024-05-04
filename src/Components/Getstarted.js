@@ -11,9 +11,9 @@ const Getstarted = () => {
       
     }} className='flex  justify-center items-center md:mt-36 md:flex-row flex-col md:text-4xl text-xl'>
 <div className='w-1/2 text-center flex flex-col md:gap-24 gap-8 my-24 items-center justify-center'>
-<h3 className='  font-headingFont '>BROUCHER</h3>
+<h3 className='  font-headingFont mx-8 text-2xl'>Blockchain Development Syllabus</h3>
 <a href='/Kairaa_Blockchain-Developer.pdf' download>
-<button  className='text-white  w-fit px-6 py-3  md:text-2xl rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>Download Broucher</button>
+<button  className='text-white  w-fit px-2 py-2  md:text-2xl text-lg rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>Download Syllabus</button>
 
   </a></div>
       

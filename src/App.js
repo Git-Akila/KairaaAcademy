@@ -2,9 +2,9 @@ import Footer from "./Components/Footer";
 import NavBar from "./Components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
-import Courses from "./pages/Courses";
+
 import GalleryPage from "./pages/GalleryPage";
-import CourseSyllabus from "./pages/CourseSyllabus";
+
 // import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import { createBrowserRouter, Outlet } from "react-router-dom";
@@ -17,6 +17,9 @@ import InternshipProgram from "./pages/Top_courses/Blockchain1";
 import OtherCourse from "./pages/Top_courses/OtherCourses";
 import CourseRegistration from "./pages/CourseRegistration";
 import BlockChainCertification from "./pages/BlockChainCertification";
+import ContactPage from "./pages/ContactPage";
+import SelfBlockChainDev from "./pages/SelfBlockChainDev";
+import ViewCourseDetails1 from "./pages/Top_courses/ViewCourseDetails1";
 
 
 
@@ -54,11 +57,10 @@ import BlockChainCertification from "./pages/BlockChainCertification";
         path:"/gallery",
         element:<GalleryPage/>
       },
-      {
-        path:"/courses",
-        element:<Courses/>,
-       
-      },
+  {
+    path:"/contact",
+    element:<ContactPage/>
+  },
       {
         path:'/course/selfpaced-course',
         element:<SelfPacedCourses/>
@@ -74,7 +76,6 @@ import BlockChainCertification from "./pages/BlockChainCertification";
       {
         path:'/course/bootcamp',
         element:<BootCamp/>
-
       } ,
       {
         path:'/course/internship-program',
@@ -96,6 +97,14 @@ import BlockChainCertification from "./pages/BlockChainCertification";
         element:<ViewCourseDetails/>,
 
       } ,
+      {
+        path:"/course/selfpaced-course/fundamentals-of-blockchain",
+        element:<SelfBlockChainDev/>
+      },
+      {
+        path:"/course/blockchain/blockchain-fundamentals",
+        element:<ViewCourseDetails1/>
+      }
     
     
     ],

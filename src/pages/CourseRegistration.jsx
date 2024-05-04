@@ -69,14 +69,14 @@ function CourseRegistration() {
                 </form>
 
             </div>
-            <div className='text-center backg4'>
+            {/* <div className='text-center backg4'>
                 <p className='text-lg font-medium'>If you want to talk to our course coordinator or representative, 
                     please call us at :</p>
                     <div className='flex text-center justify-center'>
                     <span className=' px-3'><FaSquarePhone size={25} /></span> <h2 className='text-lg'>+91-7092774077</h2></div>
                       <div className='flex text-center justify-center'><span className=' px-3'><MdEmail  size={25} /></span>  <h2 className='text-lg'>Support@kairaaacademy.com</h2>
                     </div>
-            </div>
+            </div> */}
 
         </>
     )

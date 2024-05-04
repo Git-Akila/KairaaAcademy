@@ -139,14 +139,15 @@ export default function Carousel() {
 
 
             </div>
-            <div className='flex flex-col gap-4 md:hidden'>
+            <div className='flex flex-col gap-4 md:hidden p-8'>
+            <h2 className='md:text-4xl font-headingFont text-xl font-bold text-center pt-8'>Explore our learning Programs</h2>
                 {
                     courses.map((course) => {
                         return (
-                            <div key={course.id} className='w-full p-8'>
-                                <img src={course.img} />
-                                <h2>{course.course}</h2>
-                                <button>Start Course</button>
+                            <div key={course.id} className='w-full  p-4 bg-gray-50 flex flex-col gap-2 rounded-lg'>
+                                <img src={course.img} className='rounded-md'/>
+                                <h2  className="text-2xl  mt-4 font-semibold font-paraFont text-center">{course.course}</h2>
+                                <button className='mt-4 text-xl p-4  rounded-md underline text-[#1c2a59] font-paraFont font-bold'>Read More</button>
                             </div>
                         )
                     })

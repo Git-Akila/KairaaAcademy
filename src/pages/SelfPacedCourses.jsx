@@ -124,7 +124,7 @@ function SelfPacedCourses() {
                             </p>
 
                             <div className='py-3'>
-                               <Link to="#"><button className='p-3 hover:bg-[#fff] text-black rounded-2xl text-lg bg-[#CADDFE]'>Get Started</button></Link>
+                               <Link to="/courseregistration"><button className='p-3 hover:bg-[#fff] text-black rounded-2xl text-lg bg-[#CADDFE]'>Get Started</button></Link>
                             </div></div>
                         <div className='md:w-1/4 w-1/2'>
                             <img className='rounded-2xl' src={mainhero} alt="" />
@@ -241,7 +241,7 @@ function SelfPacedCourses() {
                             <div className='p-2 hover:translate-x-4 hover:translate-y-2 transition-transform duration-300 ease-in-out '>
                                 <img className='' src={e.image} alt="" /></div>
                             <h2 className='text-lg font-medium'>{e.title}</h2>
-                            <button onClick={ForBlockchain1} className='backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn More</button>
+                           <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <button className='backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn More</button></Link>
                         </div>
                     ))}
 

@@ -5,7 +5,7 @@ import image2 from '../../assets/cryptographyTech.png';
 import image3 from '../../assets/cryptocurrencies-and-blockchainTech.jpg'
 import image4 from '../../assets/bitcoinTech.webp';
 import image5 from '../../assets/cryptocurrencyTech.jpg'
-
+import { Link } from 'react-router-dom';
 
 
 function Blockchain() {
@@ -91,7 +91,8 @@ function Blockchain() {
                         </p>
                        
                         <div className='text-center py-3'>
-                            <button className='bg-blue-300 rounded mt-10 p-2'>View Course Details</button></div>
+       
+                          <Link to='/course/blockchain/blockchain-fundamentals'>  <button className='bg-blue-300 rounded mt-10 p-2'>View Course Details</button></Link></div>
                     </div>
                 </div>
 

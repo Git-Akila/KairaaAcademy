@@ -5,10 +5,14 @@ import Vision from "../carouselimages/vision.webp"
 import bigStar from "../carouselimages/element-01.png";
 import star from "../carouselimages/element-02.png"
 import backgroundImg from "../carouselimages/backgroundimg.png"
-import { motion } from "framer-motion"
+
+
+
+
 
 
 const AboutPage = () => {
+
 
   const info = [
     {
@@ -48,7 +52,7 @@ const AboutPage = () => {
           <p className='text-lg'>We guarantee to unlock the full potential of your skills, paving a path towards success.</p>
 
 
-          <button className="text-white w-fit md:px-6 px-2 md:py-3 py-2 my-2 text-2xl rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Explore Courses</button>
+          <button className="text-white w-fit md:px-6 px-2 md:py-3 py-2 my-2 text-2xl rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer ">Explore Courses</button>
         </div>
       </div>
 
@@ -62,26 +66,21 @@ const AboutPage = () => {
             <p className="  ">To be a leading force in shaping a blockchain-powered world through education and innovation.</p>
           </div>
           
-       <motion.div
-       initial={{opacity:0, y:100}}
-       animate={{opacity:1, y:0}}
-       transition={{duration:1, ease:"easeOut", delay:0.2}}
+       <div
+       
        className="w-2/3"
        >
        <img src={Vision}  className=' md:w-60 md:h-60 '/>  
-       </motion.div>
+       </div>
         </div>
 
         <div className="flex md:flex-row  md:w-3/5 w-full m-auto h-1/2">
-        <motion.div
-       initial={{opacity:0, y:100}}
-       animate={{opacity:1, y:0}}
-       transition={{duration:1, ease:"easeOut", delay:0.2}}
-       className="w-2/3"
-       >
+       
+        <div className="w-2/3" >
        <img src={Mission}  className='md:h-56 md:w-56 '/>  
-       </motion.div>
-          <div className="flex flex-col gap-4 md:p-8 p-4 ">
+       </div>
+          
+          <div className="flex flex-col gap-4 md:p-8 p-4 w-2/3">
             <h2 className="font-bold  md:text-4xl text-2xl text-end font-headingFont">OUR <span className="text-[#1C4CE4]">MISSION</span></h2>
             <p className="   text-end">To bridge the knowledge gap in blockchain technology by offering high-quality, industry-relevant education to a global audience.</p>
           </div>
@@ -109,14 +108,14 @@ const AboutPage = () => {
           <p>Join us at Kairaa Blockchain Academy and take the first step towards a promising career in technology, all in the comfort of your mother tongue, Tamil. Let’s code தமிழில்!</p>
 
 
-          <button className="text-white w-fit px-6 py-3 my-2 text-2xl rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">Explore Courses</button>
+          <button className="text-white w-fit px-6 py-3 my-2 text-2xl rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer ">Explore Courses</button>
         </div>
       </div>
 
       {/* section 4 */}
 
       <div className="flex gap-8 md:px-24 md:py-12 px-8 flex-col md:flex-row items-center ">
-        <div className="w-2/6"> <img src={backgroundImg} /></div>
+        <div className="w-3/6"> <img src={backgroundImg} className='hover:rotate-45 '/></div>
         <div className="flex flex-col gap-4 md:w-5/6 w-full  text-md font-medium items-center md:text-2xl px-8 font-paraFont">
           <h1 className=" font-bold md:text-3xl text-xl text-center text-[#15265D] font-headingFont">What sets Kairaa Blockchain Academy apart?</h1>
 
