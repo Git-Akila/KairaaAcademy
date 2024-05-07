@@ -1,4 +1,5 @@
-import React,{Link} from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import imagebanner from '../assets/bootcamp.jpg'
 
 function BootCamp() {
@@ -123,14 +124,15 @@ function BootCamp() {
                     
                 </div>
                 <div className='text-center py-3 mt-5 '>
-                <button className='bg-blue-500 rounded hover:bg-blue-700 p-3 text-lg text-center'>Register Now</button>
+                <Link to='/courseregistration'><button className='bg-blue-500 rounded hover:bg-blue-700 p-3 text-lg text-center'>Register Now</button></Link>
                 </div>
-                <div className='mx-auto   bg-blue-50  border-l-2 border-r-2 border-r-black border-l-black md:pl-20 md:pr-10 p-5 rounded'>
+                {/* <div className='mx-auto   bg-blue-50  border-l-2 border-r-2 border-r-black border-l-black md:pl-20 md:pr-10 p-5 rounded'>
                     <h2 className='text-2xl font-bold py-2'>If you have any Queries.</h2>
                    <div className='flex justify-between text-lg font-medium '>
                     <p>Email: Support@kairaaacademy.com</p>
                     <p>Call: +91-7092774077</p>
-                </div></div>
+                </div>
+                </div> */}
                 </> 
   )
 }

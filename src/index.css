@@ -15,12 +15,10 @@
 }
 
 input{
-    @apply md:w-[400px] w-[300px] py-2 px-6 mt-8 
+    @apply md:w-[400px] w-[300px] py-2 px-6 mb-2
 }
 
-button{
-  @apply hover:scale-110 duration-300
-}
+
 
 .fontstyle1{
     @apply font-custom1 font-extrabold text-5xl;
@@ -66,3 +64,33 @@ button{
       .section1{
         @apply container mx-auto py-10 px-6;
       }
+
+
+
+
+ .arrow:after{
+  content:"";
+  display:inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top:0.42em solid;
+  border-right:0.32em solid transparent ;
+  border-left:0.32em solid transparent
+ }
+
+
+ .menu-items:hover .dropdown {
+  display: block;
+}
+
+ .dropdown.show{
+  display: block;
+ }
+
+ .dropdown.dropdown-submenu{
+  position: absolute;
+  width: 200px;
+  left: 100%;
+  top: 0;
+  padding: 10px;
+ }

@@ -1,15 +1,15 @@
 import Footer from "./Components/Footer";
-import NavBar from "./Components/Navbar";
+
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 
 import GalleryPage from "./pages/GalleryPage";
 
-// import ContactPage from "./pages/ContactPage";
+
 import HomePage from "./pages/HomePage";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import SelfPacedCourses from "./pages/SelfPacedCourses";
-import { SiBlockchaindotcom } from "react-icons/si";
+
 import BootCamp from "./pages/BootCamp";
 import ViewCourseDetails from "./pages/Top_courses/ViewCourseDetails";
 import Blockchain from "./pages/Top_courses/Blockchain";
@@ -20,6 +20,8 @@ import BlockChainCertification from "./pages/BlockChainCertification";
 import ContactPage from "./pages/ContactPage";
 import SelfBlockChainDev from "./pages/SelfBlockChainDev";
 import ViewCourseDetails1 from "./pages/Top_courses/ViewCourseDetails1";
+import Newnav from "./Components/Newnav";
+
 
 
 
@@ -28,7 +30,9 @@ import ViewCourseDetails1 from "./pages/Top_courses/ViewCourseDetails1";
  function AppLayout() {
   return (
     <div className="App overflow-hidden">
-      <NavBar/>
+     
+      <Newnav/>
+   
       <Outlet />
      <Footer/>
     </div>

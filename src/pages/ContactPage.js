@@ -52,23 +52,23 @@ const ContactPage = () => {
             <div className="flex justify-around md:mx-8 m-4 flex-col md:flex-row">
 
                 {/* contact us ++++++ chennai office details */}
-                <div className="flex flex-col justify-around items-center md:w-3/6 w-full p-4 m-4">
-                    <h1 className="text-2xl font-bold text-[#0874DD] text-center">Contact Us</h1>
-                    <p className="line-clamp-3 p-4 text-[#15265D] font-medium">Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
+                <div className="flex flex-col gap-8 items-center md:w-3/6 w-full p-4 m-4 h-full">
+                    <h1 className="text-3xl font-bold text-[#0874DD] text-center">Contact Us</h1>
+                    <p className="line-clamp-3 md:text-xl text-lg text-[#15265D] font-medium">Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
 
 
-                    <div className=" ">
+                    <div className="">
                         {contactDetails && contactDetails.map((dt, i) => {
                             return (
                                 <>
                                     <div key={i} className="flex gap-4 p-4 ">
-                                        <div>
+                                        <div >
 
                                             {dt.icon}
                                         </div>
-                                        <div >
-                                            <p className="text-slate-400 font-semibold">{dt.heading}</p>
-                                            <p className="font-bold text-[#15265D]">{dt.info}</p>
+                                        <div className='md:text-xl text-lg'>
+                                            <p className="text-slate-400  font-semibold">{dt.heading}</p>
+                                            <p className="font-bold  text-[#15265D]">{dt.info}</p>
                                         </div>
 
                                     </div>
@@ -84,30 +84,32 @@ const ContactPage = () => {
                 {/* form */}
                 <div className=" md:mx-8 p-4  md:w-3/6 w-full ">
                     <div className="md:w-5/6 w-full p-8 shadow-lg rounded-lg items-center g-4 justify-center">
-                        <h2 className="text-2xl font-bold ">Say <span className="text-[#0874DD]">Hello !</span></h2>
-                        <p className="py-4">Feel free to stop by and say hi !</p>
-                        <form className="flex flex-col">
+                        <h2 className="text-3xl font-bold ">Say <span className="text-[#0874DD]">Hello !</span></h2>
+                        <p className="py-4 text-xl font-semibold">Feel free to stop by and say hi !</p>
+                        <form className="flex flex-col text-lg ">
 
-                            <label>
+                            <label className=''>
                                 Name
                             </label>
-                            <input type="text" className='w-[300px] border border-blue-200 py-2 px-6 rounded-md' />
+                            <input type="text" className='w-full border border-blue-200  px-6 rounded-md'  />
 
                             <label>
                                 E-mail Id
                             </label>
-                            <input type="email" className='w-[300px] border border-blue-200 py-2 px-6 rounded-md' />
+                            <input type="email" className='w-full border border-blue-200  px-6 rounded-md' />
 
-                            <label>
+                            <label className=''>
                                 Contact Number
                             </label>
-                            <input type="tel" className='w-[300px] border border-blue-200 py-2 px-6 rounded-md' />
+                            <input type="tel" className='w-full border border-blue-200  px-6 rounded-md' />
 
                             <label>
                                 Message
                             </label>
-                            <textarea rows="4" cols="40" className="border border-blue-200 w-[300px]"></textarea>
-                            <button className="rounded-xl bg-[#FF8C19] text-white font-bold w-fit m-auto my-4 px-3 py-2">Submit</button>
+                            <textarea rows="4" cols="40" className="border border-blue-200 w-full"></textarea>
+                         
+                          <button className="text-white w-fit md:px-6 md:py-3 p-2 my-4 md:text-xl text-lg font-bold rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-10 hover:scale-110 duration-300">Submit</button>
+                         
                         </form>
 
                     </div>
@@ -116,10 +118,10 @@ const ContactPage = () => {
             <div style={{
                 backgroundImage: `url(${Image})`, backgroundSize: 'cover',
                 width: '100%',
-                height: '80vh'
+                height: 'full'
             }} className=''>
-                <div className="text-[#15265D] ">
-                    <h2 className="text-2xl font-bold text-center ">OUR OFFICES AROUND<span className="text-[#FF8C19]"> TAMIL NADU</span></h2>
+                <div className="text-[#15265D] p-12">
+                    <h2 className="text-2xl font-bold text-center ">OUR OFFICES AROUND<span className=" text-blue-500"> TAMIL NADU</span></h2>
                     <p className="md:text-xl text-lg font-medium line-clamp-3 p-4 text-center">Embark on an exciting journey with Kairaa Blockchain Academy, nestled in dynamic cities across Tamil Nadu!</p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center  " >

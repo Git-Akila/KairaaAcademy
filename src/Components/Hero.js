@@ -59,16 +59,16 @@ const Hero = () => {
  
 
 
-      <div className="flex h-[40vh] md:h-[80vh] bg-[#F7F4FD] items-center justify-center" >
+      <div className="flex h-[60vh] md:h-[80vh] bg-[#F7F4FD] items-center justify-center" >
       <ParticlesContainer className='z-0' />
-        <div className=' md:w-2/3 w-full px-8 text-center md:px-16 font-bold text-[#1C1678] leading-8 z-10 '>
+        <div className=' md:w-2/3 w-full px-8 text-center md:px-16 font-bold text-[#1C1678] leading-8  '>
           <h1 className="md:text-4xl text-2xl font-headingFont md:p-4 md:m-4 m-2 leading-9">Discover Blockchain  Technology with
             <span className='px-3 text-blue-500'>Kairaa Blockchain Academy&#x27;s</span> Online Course.</h1>
           <p className=' font-medium  m-4 md:text-2xl text-xl font-paraFont'>Kairaa Blockchain Academy is a leading online platform specializing in blockchain education.</p>
-<Link to='/course/blockchain'> <button className='  text-white w-fit md:px-6 md:py-3 p-2 my-2 md:text-xl text-lg rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-2'>Get Started</button></Link>
+<Link to='/course/blockchain'> <button className='  text-white w-fit md:px-6 md:py-3 p-2 my-2 md:text-xl text-lg rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-10 hover:scale-110 duration-300'>Get Started</button></Link>
         </div>
         <div className='w-1/2  z-10 hidden md:block'>
-          <img className='w-[400px] h-[400px]' src={aboutImg} />
+          <img alt='banner' className='w-[400px] h-[400px]' src={aboutImg} />
         </div>
 
         <div>
@@ -87,7 +87,7 @@ const Hero = () => {
           return (
            
             <div  className='box border-2 border-blue-400 p-4 md:h-[90vh] md:w-[20vw] rounded-2xl '>
-              <img src={dt.img} className='w-28 h-28'/>
+              <img src={dt.img} alt={dt.heading} className='w-28 h-28'/>
               <h2 className='md:text-xl text-lg font-bold p-4  font-headingFont'>{dt.heading}</h2>
               <hr />
               <p className=' p-4 font-paraFont'>{dt.para}</p>
@@ -102,7 +102,7 @@ const Hero = () => {
 
 {/* about */}
 <div className='flex flex-col md:flex-row md:h-[90vh] justify-around items-center '>
-<img className='md:h-[90vh] h-[70vh] p-8' src={image}/>
+<img alt='about' className='md:h-[90vh] h-[70vh] p-8' src={image}/>
   <div className='md:w-2/4 p-12 md:p-4 flex flex-col gap-4 items-center justify-center'>
 <h2 className='md:text-3xl text-xl font-bold p-6 font-headingFont'>Unlock the Power of Blockchain with Kairaa Blockchain Academy</h2>
 <p className='text-xl font-paraFont'>Kairaa Blockchain Academy is a premier online learning platform designed to equip you with the knowledge and skills needed to thrive in the ever-evolving world of blockchain technology.</p>
