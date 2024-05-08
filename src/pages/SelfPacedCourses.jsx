@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import mainhero from '../assets/bgHero.jpg'
 import image1 from '../assets/forHero1.png'
@@ -87,44 +87,23 @@ function SelfPacedCourses() {
 
 
     // ************************************************************************************//
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 3000, min: 3000 },
-            items: 3,
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 4,
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-        },
-    };
+    
 
-        function ForBlockchain1(){
-            useNavigate('/blockchain1');
-        }
-
+       
         
     return (
         <>
             <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 '>
-                <div className='backg3 rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
+                <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
-                            <h2 className='sm:text-4xl md:text-5xl text-3xl text-white font-bold mb-5 '>Develop your skills without diligence.</h2>
-                            <p className='text-lg text-white'>Kairaa Academy is the leading provider of online blockchain courses.
+                            <h2 className='sm:text-4xl md:text-5xl text-3xl text-black font-bold mb-5 '>Develop your skills without diligence.</h2>
+                            <p className='text-lg text-black'>Kairaa Academy is the leading provider of online blockchain courses.
                                 We offer a wide range of courses to meet the needs of students of all levels of experience, from beginners to advanced learners.
                             </p>
 
                             <div className='py-3'>
-                               <Link to="/courseregistration"><button className='p-3 hover:bg-[#fff] text-black rounded-2xl text-lg bg-[#CADDFE]'>Get Started</button></Link>
+                               <Link to="/courseregistration"><button className='p-3 bg-[#fff] text-black rounded-2xl text-lg hover:bg-blue-400'>Get Started</button></Link>
                             </div></div>
                         <div className='md:w-1/4 w-1/2'>
                             <img className='rounded-2xl' src={mainhero} alt="" />
@@ -207,7 +186,7 @@ function SelfPacedCourses() {
 
             {/* ************************************************************************ ***********************/}
             <div className=' md:px-12 p-4 max-w-screen-2xl mx-auto mt-28 '>
-                <div className='backg1 rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
+                <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
                             <h2 className='sm:text-3xl text-2xl font-bold mb-5 text-black '>Start Your Career Journey With Us.</h2>
@@ -254,7 +233,7 @@ function SelfPacedCourses() {
 
             {/* ********************************************************************************************** */}
             <div className=' md:px-10, p-4 max-w-screen-2xl mx-auto mt-28 '>
-                <div className='backg4 rounded-xl rounded-bl-[90px] md:p-9 px-4 py-9'>
+                <div className='bg-[#CADDFE] rounded-xl rounded-bl-[90px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-1/4 w-1/2 ml-10'>
                             <img className='rounded-full' src={mobile} alt="" />

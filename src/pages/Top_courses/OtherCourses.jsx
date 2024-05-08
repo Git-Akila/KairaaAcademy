@@ -78,10 +78,10 @@ function OtherCourse() {
     return (
         <>
             <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 '>
-                <div className='backg3 rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
+                <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
-                            <h2 className='sm:text-4xl md:text-5xl text-3xl text-white font-bold mb-5 '>Courses Offered in Programming Languages.</h2>
+                            <h2 className='sm:text-4xl md:text-5xl text-3xl text-black font-bold mb-5 '>Courses Offered in Programming Languages.</h2>
 
 
                             </div>

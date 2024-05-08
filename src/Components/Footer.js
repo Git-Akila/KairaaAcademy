@@ -18,8 +18,8 @@ const Footer = () => {
           <ul className='flex md:text-4xl text-3xl gap-2'>
            <Link to='https://www.linkedin.com/company/kairaa-blockchain-academy/'> <li><FaLinkedin /></li></Link>
             <Link to='https://www.instagram.com/kairaaacademy/'><li><FaInstagramSquare /></li></Link>
-            <li><FaTwitter /></li>
-            <li><FaFacebookSquare /></li>
+           <Link to='https://twitter.com/Kairaa_academy'><li><FaTwitter /></li></Link> 
+          <Link to='https://www.facebook.com/kairaaacademy'><li><FaFacebookSquare /></li></Link>  
           </ul>
         </div>
         

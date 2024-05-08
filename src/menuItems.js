@@ -15,7 +15,7 @@ export const menuItems= [
         },
         {
           id: 2,
-          title: "Our Top Course",
+          title: "Our Top Courses",
           submenu: [
             {
               id: 1,
@@ -24,7 +24,7 @@ export const menuItems= [
             },
             {
               id: 2,
-              title: "Other Course",
+              title: "Other Courses",
              url: "/course/othercourse"
             }
           ]

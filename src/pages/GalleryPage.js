@@ -72,7 +72,7 @@ const GalleryPage = () => {
             {gallery.map((item) => {
                 return (
                     <div key={item.id} className='w-full  p-4 bg-gray-50 flex flex-col gap-4 rounded-lg'>
-                        <img className="rounded-lg" src={item.img} />
+                        <img className="rounded-lg object-cover h-[300px]" src={item.img} />
                        <p className='w-fit bg-[#DC81A7] px-2 pt-1 rounded-md text-white font-bold font-paraFont text-sm'>{item.tag}</p>
                         <p className='text-lg font-medium font-headingFont'>{item.desc}</p>
                     </div>

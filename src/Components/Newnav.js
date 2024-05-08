@@ -1,9 +1,13 @@
 import React,{useState} from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+// child components
 import { menuItems } from '../menuItems';
 import MenuItem from "./MenuItem";
+// icons
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { FaBars, FaTimes } from 'react-icons/fa';
+// logo
 import Logo from "../carouselimages/logo.webp"
 
 
@@ -13,9 +17,8 @@ const Newnav = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <nav className='header'>
-
-      <div className='md:flex justify-evenly h-24  md:items-center border-b-2 text-lg font-medium py-4 hidden '>
+    <>
+    <div className='md:flex justify-evenly h-24  md:items-center border-b-2 text-lg font-medium py-4 hidden '>
         <div>
           <img src={Logo} className='h-[130px] p-4' />
         </div>
@@ -35,10 +38,13 @@ const Newnav = () => {
 
         </div>
         <div>
-          <button className='  text-white w-fit md:px-6 md:pt-3 p-2 my-2 md:text-xl font-bold text-lg rounded-md  bg-blue-500 cursor-pointer'>Contact Us</button>
+        <Link to='/contact'>  <button className='  text-white w-fit md:px-6 md:pt-3 p-2 my-2 md:text-xl font-bold text-lg rounded-md  bg-blue-500 cursor-pointer'>Contact Us</button></Link>
         </div>
       </div>
-      <ul className='md:flex justify-around hidden  px-4 cursor-pointer md:h-16 md:items-center border border-b-2 font-bold text-lg text-[#1c2a59] '>
+    <nav className='desktop-nav'>
+
+      
+      <ul className='menus md:flex justify-around hidden  px-4 cursor-pointer md:h-16 md:items-center border border-b-2 font-bold text-lg text-[#1c2a59] '>
         {menuItems.map((menu, index) => {
           const depthLevel = 0;
           return <MenuItem items={menu} key={index} level={depthLevel} />
@@ -55,7 +61,7 @@ const Newnav = () => {
         </div>
       </div>
       {nav && (
-        <ul className='flex flex-col justify-center  items-center absolute top-0 left-0 w-full h-screen bg-white font-bold text-blue-500  z-30 ' onClick={() => setNav(!nav)}>
+        <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white font-bold text-blue-500  z-30 ' onClick={() => setNav(!nav)}>
           {menuItems.map((menu, index) => {
             const depthLevel = 0;
             return <MenuItem items={menu} key={index} level={depthLevel} />
@@ -63,7 +69,7 @@ const Newnav = () => {
         </ul>
       )}
     </nav>
-
+    </>
   )
 }
 

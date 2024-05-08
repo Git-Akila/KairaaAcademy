@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import fundamental from '../assets/blockchaincertificate.webp';
-import { Link } from 'react-router-dom';
+
 function SelfBlockChainDev() {
     const [index1, setIndex] = useState(null);
     const [activeTab, setActiveTab] = useState(0);
@@ -327,10 +327,10 @@ function SelfBlockChainDev() {
 
 return (
         <>  <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-3 '>
-            <div className='backg3 rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
+            <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                     <div className='md:w-3/4'>
-                        <h2 className='sm:text-4xl md:text-5xl text-3xl text-white font-bold mb-5 '>Blockchain Development</h2>
+                        <h2 className='sm:text-4xl md:text-5xl text-3xl text-black font-bold mb-5 '>Blockchain Development</h2>
                     </div>
                 </div>
             </div></div>

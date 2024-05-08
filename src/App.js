@@ -32,6 +32,7 @@ import Newnav from "./Components/Newnav";
     <div className="App overflow-hidden">
      
       <Newnav/>
+      {/* <Menu/> */}
    
       <Outlet />
      <Footer/>
