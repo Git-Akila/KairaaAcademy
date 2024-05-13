@@ -9,17 +9,19 @@ import GalleryPage from "./pages/GalleryPage";
 import HomePage from "./pages/HomePage";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import SelfPacedCourses from "./pages/SelfPacedCourses";
+import Blockchain from "./pages/Top_courses/Blockchain";
 
 import BootCamp from "./pages/BootCamp";
 import ViewCourseDetails from "./pages/Top_courses/ViewCourseDetails";
-import Blockchain from "./pages/Top_courses/Blockchain";
+import ViewCourseDetails1 from "./pages/Top_courses/ViewCourseDetails1";
+
 import InternshipProgram from "./pages/Top_courses/Blockchain1";
 import OtherCourse from "./pages/Top_courses/OtherCourses";
 import CourseRegistration from "./pages/CourseRegistration";
 import BlockChainCertification from "./pages/BlockChainCertification";
 import ContactPage from "./pages/ContactPage";
 import SelfBlockChainDev from "./pages/SelfBlockChainDev";
-import ViewCourseDetails1 from "./pages/Top_courses/ViewCourseDetails1";
+
 import Newnav from "./Components/Newnav";
 
 
@@ -98,7 +100,7 @@ import Newnav from "./Components/Newnav";
 
       } ,
       {
-        path:'/viewcoursedetails',
+        path:'/courses/:id',
         element:<ViewCourseDetails/>,
 
       } ,
@@ -107,7 +109,7 @@ import Newnav from "./Components/Newnav";
         element:<SelfBlockChainDev/>
       },
       {
-        path:"/course/blockchain/blockchain-fundamentals",
+        path:"/course/:id",
         element:<ViewCourseDetails1/>
       }
     

@@ -7,11 +7,11 @@ import image2 from '../assets/block.jpg';
 import image3 from '../assets/broadcasting.jpg'
 import image4 from '../assets/relatedblock1.jpg'
 import icon1 from '../assets/newblockchain.jpg';
-import icon2 from '../assets/../assets/cryptogr.jpg'
+import icon2 from '../assets/blockchaindevprofessional.jpg'
 
-import icon4 from '../assets/cent.jpg';
-import icon5 from '../assets/bitcoin.jpg';
-import icon6 from '../assets/cryptobeginner.jpg';
+import icon4 from '../assets/blocktechnology.webp';
+import icon5 from '../assets/Solidity-Programming-Language.jpg';
+import icon6 from '../assets/blockchain-trainer.png';
 import icon7 from '../assets/newc.jpg';
 import icon8 from '../assets/newc.jpg';
 import icon9 from '../assets/newjava.jpg';
@@ -34,7 +34,7 @@ function SelfPacedCourses() {
         {
             id: 2,
             image: icon2,
-            title: "Cryptocurrency Expert",
+            title: "Blockchain Developer Professional ",
 
 
         },
@@ -42,19 +42,19 @@ function SelfPacedCourses() {
         {
             id: 4,
             image: icon4,
-            title: " Navigating Cryptocurrencies And Blockchain for global Impact.",
+            title: "Blockchain Developer Expert",
 
         },
         {
             id: 5,
             image: icon5,
-            title: "Bitcoin cryptocurrency",
+            title: "A Complete Solidity for Smart Programming",
 
         },
         {
             id: 6,
             image: icon6,
-            title: "Cryptocurrency Beginner Guide",
+            title: "Certified Blockchain Trainer ",
 
         },
         {

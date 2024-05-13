@@ -37,7 +37,7 @@ export const menuItems= [
         {
           id: 4,
           title: "Certified Architect ",
-         url: "/course/blockchain"
+         url: "/course/bockchaincertification"
         },
 
         {
