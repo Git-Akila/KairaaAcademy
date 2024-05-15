@@ -28,7 +28,7 @@ const Footer = () => {
           <ul className='text-xl font-paraFont p-4 '>
             <li className='md:p-4 p-2 font-medium'>FAQ</li>
             <li className='md:p-4 p-2 font-medium'>Blog</li>
-            <li className='md:p-4 p-2 font-medium'>Privacy Policy</li>
+            <Link to="/terms-and-condition"><li className='md:p-4 p-2 font-medium'>Privacy Policy</li></Link>
           </ul>
         </div>
 

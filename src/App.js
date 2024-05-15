@@ -24,6 +24,8 @@ import SelfBlockChainDev from "./pages/SelfBlockChainDev";
 
 import Newnav from "./Components/Newnav";
 
+import Terms_and_cond from "./pages/Terms_and_cond";
+
 
 
 
@@ -68,6 +70,11 @@ import Newnav from "./Components/Newnav";
     path:"/contact",
     element:<ContactPage/>
   },
+{
+path:"/terms-and-condition",
+element:<Terms_and_cond/>
+},
+
       {
         path:'/course/selfpaced-course',
         element:<SelfPacedCourses/>

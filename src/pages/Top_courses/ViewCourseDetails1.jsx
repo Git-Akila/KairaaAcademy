@@ -110,8 +110,8 @@ function ViewCourseDetails1() {
 
 
           {/* ************************************************************************************************** */}
-          <div label="Syllabus" className='container mx-auto  border-2 border-gray-200 '>
-            <div className=' px-3 py-3 border-2 border-gray-200'>
+          <div label="Syllabus" className='container mx-auto   border-2 border-gray-200 '>
+            <div className=' px-3 py-3 border-2 p-5 border-gray-200'>
               <h1 className='text-3xl font-bold py-3'>{course.syllabusheading}</h1>
               <p className='text-lg font-medium'>{course.syllabus}</p></div>
 
@@ -120,7 +120,7 @@ function ViewCourseDetails1() {
               {course.content.map((ctop, i) => {
                 return (
                   <>
-                    <div className='flex justify-between'><h1 className='text-xl m-2 font-bold py-3 ' key={ctop.id}>{ctop.name}</h1>
+                    <div className='flex justify-between p-5'><h1 className='text-xl m-2 font-bold py-3 ' key={ctop.id}>{ctop.name}</h1>
                       <button className='mx-20 font-bold ' onClick={() => ViewOrNot(ctop.id)}>{index1 === ctop.id ? "⊝" : "⊕"}</button></div>
 
                     {index1 === ctop.id && (<ul className=' list-disc px-20 leading-10 text-lg border-b-2 border-b-gray-300'>

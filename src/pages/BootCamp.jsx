@@ -11,8 +11,7 @@ function BootCamp() {
                         <div className='md:w-3/5'>
                             <h2 className='sm:text-4xl md:text-5xl text-3xl text-black font-bold mb-5 '>Bootcamp</h2>
 
-
-                            </div> 
+                        </div> 
 
                        
                     </div>

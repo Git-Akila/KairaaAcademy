@@ -116,11 +116,11 @@ function ViewCourseDetails() {
               <p className='text-lg font-medium'>{course.syllabus}</p></div>
 
 
-            <div className='container mx-auto border-2 border-gray-300'>
+            <div className='container  mx-auto border-2 border-gray-300'>
               {course.topics.map((ctop, i) => {
                 return (
                   <>
-                    <div className='flex justify-between'><h1 className='text-xl m-2 font-bold py-3 ' key={ctop.id}>{ctop.name}</h1>
+                    <div className='flex p-5 justify-between'><h1 className='text-xl m-2 font-bold py-3 ' key={ctop.id}>{ctop.name}</h1>
                       <button className='mx-20 font-bold ' onClick={() => ViewOrNot(ctop.id)}>{index1 === ctop.id ? "⊝" : "⊕"}</button></div>
 
                     {index1 === ctop.id && (<ul className=' list-disc px-20 leading-10 text-lg border-b-2 border-b-gray-300'>
