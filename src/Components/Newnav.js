@@ -38,7 +38,7 @@ const Newnav = () => {
 
         </div>
         <div>
-        <Link to='/contact'>  <button className='  text-white w-fit md:px-6 md:pt-3 p-2 my-2 md:text-xl font-bold text-lg rounded-md  bg-blue-500 cursor-pointer'>Contact Us</button></Link>
+        <Link to='/contact'>  <button className='  text-white w-fit md:px-6 md:mt-1 p-2 md:text-xl font-bold text-lg rounded-md  bg-blue-500 cursor-pointer'>Contact Us</button></Link>
         </div>
       </div>
     <nav className='desktop-nav'>

@@ -26,9 +26,9 @@ const Footer = () => {
         <div className='md:w-1/5 w-full pt-8'>
           <h4 className='font-headingFont md:text-2xl font-bold'>Quick links</h4>
           <ul className='text-xl font-paraFont p-4 '>
-            <li className='md:p-4 p-2 font-medium'>FAQ</li>
-            <li className='md:p-4 p-2 font-medium'>Blog</li>
-            <Link to="/terms-and-condition"><li className='md:p-4 p-2 font-medium'>Privacy Policy</li></Link>
+         <Link to="/about-kairaa-blockchain-academy">   <li className='md:p-4 p-2 font-medium'>About Us</li></Link>
+           <Link to='/resources'> <li className='md:p-4 p-2 font-medium'>Blog</li></Link>
+            <Link to="/payment-terms-condition"><li className='md:p-4 p-2 font-medium'>Payments Terms & Conditions</li></Link>
           </ul>
         </div>
 

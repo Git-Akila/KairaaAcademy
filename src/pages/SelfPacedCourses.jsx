@@ -169,7 +169,7 @@ function SelfPacedCourses() {
                     <img src={image3} alt="" /></div>
 
                 <div className='md:w-3/4'>
-                    <h1 className='sm:text-3xl text-2xl font-bold mb-5'>Your Reliable Partner.Wherever You are.</h1>
+                    <h1 className='sm:text-3xl text-2xl font-bold mb-5'>Your Reliable Partner , Wherever You are!</h1>
                     <p className='fontstyle4 leading-7 max-w[700px] mx-auto'>Learning support from mentors and like-minded peers.
                     </p>
                     <p className='fontstyle4 leading-7 max-w[700px] mx-auto py-3'>
@@ -194,7 +194,7 @@ function SelfPacedCourses() {
                             </p>
 
                             <div className='py-3'>
-                             {/* <button onClick={} className='p-3 hover:bg-[#fffcfd] rounded-2xl text-lg bg-blue-100'>Join with Us</button> */}
+                              <Link to="/courseregistration"><button className='p-3 bg-[#fffcfd] hover:w-[150px] rounded-2xl text-lg hover:bg-blue-300'>Join with Us</button> </Link>
                             </div></div>
 
                         <div>
@@ -217,33 +217,31 @@ function SelfPacedCourses() {
 
 
                         <div key={e.id} className='p-2 shadow-lg min-w-[15rem] bg-slate-100 rounded-md'>
-                            <div className='p-2 hover:translate-x-4 hover:translate-y-2 transition-transform duration-300 ease-in-out '>
-                                <img className='' src={e.image} alt="" /></div>
+                            <div className='p-2 transition-transform duration-1000 ease-in-out hover:scale-110 group-hover:filter hover:blur-sm overflow-hidden'>
+                            <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <img className='rounded' src={e.image} alt="" /></Link>
+                               
+                                </div>
                             <h2 className='text-lg font-medium'>{e.title}</h2>
-                           <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <button className='backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn More</button></Link>
+                           <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <button className=' backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn Now</button></Link>
                         </div>
                     ))}
 
 
                 </div>
             </div>
-            <div className='text-center'>
-                <button className='bg-blue-500 hover:bg-blue-600 rounded p-3 text-lg text-white font-medium'>View All Courses</button>
-            </div>
+            
 
             {/* ********************************************************************************************** */}
-            <div className=' md:px-10, p-4 max-w-screen-2xl mx-auto mt-28 '>
+            <div className=' md:px-10, p-4 max-w-screen-2xl mx-auto  '>
                 <div className='bg-[#CADDFE] rounded-xl rounded-bl-[90px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
-                        <div className='md:w-1/4 w-1/2 ml-10'>
-                            <img className='rounded-full' src={mobile} alt="" />
+                        <div className='md:w-1/4 w-1/2 ml-10 '>
+                            <img className='rounded-full animate-spin duration:300 transition:transform ease-in-out transform' src={mobile} alt="" />
                         </div>
                         <div className='w-1/2'>
                             <h2 className='text-4xl font-medium'>Flexiblity</h2>
                             <p className='text-lg font-medium '>You can access our session vedios and meterials Anytime, anywhere.</p>
-                            <div className='py-3'>
-                             {/* <button onClick={Courseregistration} className='p-2 hover:bg-[#fffcfd] rounded-2xl text-lg bg-blue-100'>Join with Us</button> */}
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

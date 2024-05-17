@@ -6,6 +6,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 // import { Selfpacedcourses } from './Top_courses/Data/Selfpacedcourses';
 import Block from '../assets/selfpacedcourse1.jpg';
+import Course1 from './Top_courses/Data/selfBlockchainDev/Course1';
 
 function SelfBlockChainDev() {
 
@@ -89,7 +90,10 @@ function SelfBlockChainDev() {
                             </ul>
                         </div>
                     </TabPanel>
-                    <TabPanel value="2">Syllabus</TabPanel>
+                    <TabPanel value="2">
+                            <Course1/>
+                        
+                    </TabPanel>
 
                 </TabContext>
             </Box>

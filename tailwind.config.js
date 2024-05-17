@@ -1,3 +1,4 @@
+const { transform } = require('framer-motion');
 
 
 
@@ -10,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily:{
         "headingFont":["Platypi", "serif"],
-        "paraFont":["Anek Devanagari", "sans-serif"],
+        "paraFont":['Nunito Sans', 'sans-serif'],
         "custom1": ['Nunito Sans', 'sans-serif'], 
       }
     },
@@ -18,10 +19,24 @@ module.exports = {
       xs:"480px",
       sm:"768px",
       md:"1060px",
-    }
+    },
+
+    animation: {
+      spin: 'spin 6s linear infinite',
+      
+    },
+    keyframes: {
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
+     
+    },
+
   },
+  variants:{},
   plugins: [],
 }
-
+// "paraFont":["Anek Devanagari", "sans-serif"],
 
 

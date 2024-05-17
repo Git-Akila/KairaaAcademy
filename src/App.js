@@ -29,23 +29,21 @@ import Terms_and_cond from "./pages/Terms_and_cond";
 
 
 
+import ScrollToTop from './Components/ScrollToTop';
 
-
- function AppLayout() {
+function AppLayout() {
   return (
     <div className="App overflow-hidden">
-     
-      <Newnav/>
-      {/* <Menu/> */}
-   
+      <ScrollToTop />
+      <Newnav />
       <Outlet />
-     <Footer/>
+      <Footer />
     </div>
   );
 }
 
 
- const appRouter = createBrowserRouter([
+const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
@@ -59,70 +57,70 @@ import Terms_and_cond from "./pages/Terms_and_cond";
         element: <AboutPage />,
       },
       {
-        path:"/resources",
-        element:<BlogPage/>
+        path: "/resources",
+        element: <BlogPage />
       },
       {
-        path:"/gallery",
-        element:<GalleryPage/>
-      },
-  {
-    path:"/contact",
-    element:<ContactPage/>
-  },
-{
-path:"/terms-and-condition",
-element:<Terms_and_cond/>
-},
-
-      {
-        path:'/course/selfpaced-course',
-        element:<SelfPacedCourses/>
+        path: "/gallery",
+        element: <GalleryPage />
       },
       {
-        path:'/course/blockchain',
-        element:<Blockchain/>
+        path: "/contact",
+        element: <ContactPage />
       },
       {
-        path:'/course/othercourse',
-        element:<OtherCourse/>
-      } ,    
-      {
-        path:'/course/bootcamp',
-        element:<BootCamp/>
-      } ,
-      {
-        path:'/course/internship-program',
-        element:<InternshipProgram/>
+        path: "/payment-terms-condition",
+        element: <Terms_and_cond />
+      },
 
-      } ,
       {
-        path:'/course/bockchaincertification',
-        element:<BlockChainCertification/>,
-
-      } ,
-      {
-        path:'/courseregistration',
-        element:<CourseRegistration/>,
-
-      } ,
-      {
-        path:'/courses/:id',
-        element:<ViewCourseDetails/>,
-
-      } ,
-      {
-        path:"/course/selfpaced-course/fundamentals-of-blockchain",
-        element:<SelfBlockChainDev/>
+        path: '/course/selfpaced-course',
+        element: <SelfPacedCourses />
       },
       {
-        path:"/course/:id",
-        element:<ViewCourseDetails1/>
+        path: '/course/blockchain',
+        element: <Blockchain />
+      },
+      {
+        path: '/course/othercourse',
+        element: <OtherCourse />
+      },
+      {
+        path: '/course/bootcamp',
+        element: <BootCamp />
+      },
+      {
+        path: '/course/internship-program',
+        element: <InternshipProgram />
+
+      },
+      {
+        path: '/course/bockchaincertification',
+        element: <BlockChainCertification />,
+
+      },
+      {
+        path: '/courseregistration',
+        element: <CourseRegistration />,
+
+      },
+      {
+        path: '/courses/:id',
+        element: <ViewCourseDetails />,
+
+      },
+      {
+        path: "/course/selfpaced-course/fundamentals-of-blockchain",
+        element: <SelfBlockChainDev />
+      },
+      {
+        path: "/course/:id",
+        element: <ViewCourseDetails1 />
       }
-    
-    
+
+
     ],
-   
+
   },
 ]);
 export default appRouter;
