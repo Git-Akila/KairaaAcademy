@@ -61,8 +61,8 @@ const Hero = () => {
 
       <div className="flex h-[60vh] md:h-[80vh] bg-[#F7F4FD] items-center justify-center" >
         <ParticlesContainer className='-z-0' />
-        <div className=' md:w-2/3 w-full px-8 text-center md:px-16 font-bold text-[#1C1678] leading-8 z-10 '>
-          <h1 className="md:text-4xl text-6xl font-headingFont md:p-4 md:m-4 m-2 leading-9">Discover Blockchain  Technology with
+        <div className=' md:w-2/3 w-full px-8 text-center md:px-16 font-bold text-[#1C1678] z-10 '>
+          <h1 className="md:text-4xl text-2xl font-headingFont md:p-4 md:m-4 m-2 ">Discover Blockchain  Technology with
             <span className='px-3 text-blue-500'>Kairaa Blockchain Academy&#x27;s</span> Online Course.</h1>
           <p className=' font-medium  m-4 md:text-2xl text-xl font-paraFont'>Kairaa Blockchain Academy is a leading online platform specializing in blockchain education.</p>
           <Link to='/course/blockchain'> <button className='  text-white w-fit md:px-6 md:py-3 p-2 my-2 md:text-xl text-lg rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-20 hover:scale-110 duration-300'>Get Started</button></Link>
@@ -86,7 +86,7 @@ const Hero = () => {
         {info.map((dt) => {
           return (
 
-            <div className='box border-2 border-blue-400 p-4 md:h-auto h-[90vh] md:w-[20vw] rounded-2xl '>
+            <div className='box border-2 border-blue-400 p-4 h-auto md:h-[700px] md:w-[20vw] rounded-2xl '>
               <img src={dt.img} alt={dt.heading} className='w-28 h-28' />
               <h2 className='md:text-xl text-lg font-bold p-4  font-headingFont'>{dt.heading}</h2>
               <hr />
