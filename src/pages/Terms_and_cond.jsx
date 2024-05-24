@@ -80,10 +80,10 @@ const privacy=[
     <div className='bg-blue-200 p-20 '>
         <h2 className='ml-5 md:text-6xl lg:text-4xl text-3xl  sm:text-3xl font-bold text-black p-2 border-l-4 border-l-black'>Payment Terms And Conditions</h2>
     </div>
-    <div className='leading-7 mx-auto container py-10 '>
+    <div className='leading-7 mx-auto p-3 container py-10 '>
         {privacy.map((e)=>{return <>
-            <h2 className='text-2xl font-bold py-3'>{e.heading}</h2>
-            <li className='text-lg'>{e.paragraph}</li>
+            <h2 className='text-2xl  font-bold py-3'>{e.heading}</h2>
+            <li className='text-lg mb-3'>{e.paragraph}</li>
             
             </>
         })}

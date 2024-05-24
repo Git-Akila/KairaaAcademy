@@ -48,69 +48,69 @@ function BootCamp() {
                 {/* ********************************** **********************************************************/}
                 <div className='container mx-auto'>
                     <h2 className='text-2xl font-bold py-3'>Program Details</h2>
-                    <table className="min-w-full divide-y divide-gray-200 border-2 border-gray-200">
+                    <table className="min-w-full divide-y  divide-gray-200 border-2 border-gray-200">
                         <thead className="bg-gray-50">
                             <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">Sessions</th>
                             <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">Duration</th>
                             <th className="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">Covered Topics</th>
                         </thead>
-                        <tbody className="bg-white divide-y text-lg p-2  divide-gray-200">
+                        <tbody className="bg-white divide-y text-lg   divide-gray-200">
                             
-                            <tr><td>Introduction to Blockchain</td>
-                            <td>1 hour</td>
-                            <td><tr>What is Blockchain?</tr>
-                            <tr> History and Evolution of Blockchain.</tr>
-                            <tr>Key Features and Benifits.</tr>
+                            <tr className='p-5'><td className='p-5'>Introduction to Blockchain</td>
+                            <td className='p-5'>1 hour</td>
+                            <td><tr className='p-5'>What is Blockchain?</tr>
+                            <tr className='p-5'> History and Evolution of Blockchain.</tr>
+                            <tr className='p-5'>Key Features and Benifits.</tr>
                            </td>
                             
                             </tr>
 
-                            <tr><td>How Blockchain Works.</td>
-                            <td>1.5 hour</td>
-                            <td><tr>What is Blockchain?</tr>
-                            <tr>Structure of Blockchain.</tr>
-                            <tr>Cryptography in Blockchain.</tr>
-                            <tr>Consensus Mechanism.</tr>
-                            <tr>Transaction Verification and Validation.</tr>
+                            <tr><td className='p-5'>How Blockchain Works.</td>
+                            <td className='p-5'>1.5 hour</td>
+                            <td><tr className='p-5'>What is Blockchain?</tr>
+                            <tr className='p-5'>Structure of Blockchain.</tr>
+                            <tr className='p-5'>Cryptography in Blockchain.</tr>
+                            <tr className='p-5'>Consensus Mechanism.</tr>
+                            <tr className='p-5'>Transaction Verification and Validation.</tr>
                            </td></tr>
 
 
-                           <tr><td>Blockchain Use Cases</td>
-                            <td>1.5 hour</td>
-                            <td><tr>Cryptocurrencies(Bitcoin, Ethereum)</tr>
-                            <tr>Supply Chain Management.</tr>
-                            <tr>Healthcare and Identity Verification.</tr>
-                            <tr>Smart Contracts and Decentralized Applications.</tr>
+                           <tr><td className='p-5'>Blockchain Use Cases</td>
+                            <td className='p-5'>1.5 hour</td>
+                            <td><tr className='p-5'>Cryptocurrencies(Bitcoin, Ethereum)</tr>
+                            <tr className='p-5'>Supply Chain Management.</tr>
+                            <tr className='p-5'>Healthcare and Identity Verification.</tr>
+                            <tr className='p-5'>Smart Contracts and Decentralized Applications.</tr>
                            
                            </td></tr>
 
 
-                           <tr><td>Blockchain Ecosystem.</td>
-                            <td>1 hour</td>
-                            <td><tr>Public vs Private Blockchain.</tr>
-                            <tr>Ethereum and Smart Contracts.</tr>
-                            <tr>Other Major Blockchain Platforms</tr>
-                            <tr>Walleta and Exchanges.</tr>
+                           <tr><td className='p-5'>Blockchain Ecosystem.</td>
+                            <td className='p-5'>1 hour</td>
+                            <td><tr className='p-5'>Public vs Private Blockchain.</tr>
+                            <tr className='p-5'>Ethereum and Smart Contracts.</tr>
+                            <tr className='p-5'>Other Major Blockchain Platforms</tr>
+                            <tr className='p-5'>Walleta and Exchanges.</tr>
                            
                            </td></tr>
 
 
-                           <tr><td>Challenges and Future Trends.</td>
-                            <td>0.5 hour</td>
-                            <td><tr>Scalability and Energy Consumption.</tr>
-                            <tr>Regulatory and Legal Considerations.</tr>
-                            <tr>Emerging Trends Legal Considerations.</tr>
-                            <tr>The Future of Blockchain.</tr>
+                           <tr><td className='p-5'>Challenges and Future Trends.</td>
+                            <td className='p-5'>0.5 hour</td>
+                            <td><tr className='p-5'>Scalability and Energy Consumption.</tr>
+                            <tr className='p-5'>Regulatory and Legal Considerations.</tr>
+                            <tr className='p-5'>Emerging Trends Legal Considerations.</tr>
+                            <tr className='p-5'>The Future of Blockchain.</tr>
                            
                            </td></tr>
 
                            
-                           <tr ><td>Conclusion and Q&A.</td>
-                            <td>0.5 hour</td>
+                           <tr ><td className='p-5'>Conclusion and Q&A.</td>
+                            <td className='p-5'>0.5 hour</td>
                             <td><tr>Recap of Key Concepts.</tr>
-                            <tr>Regulatory and Legal Considerations.</tr>
-                            <tr>Open Discussion and Participant Questions.</tr>
-                            <tr>Final Certification Delivery.</tr>
+                            <tr className='p-5'>Regulatory and Legal Considerations.</tr>
+                            <tr className='p-5'>Open Discussion and Participant Questions.</tr>
+                            <tr className='p-5'>Final Certification Delivery.</tr>
                            
                            </td></tr>
 

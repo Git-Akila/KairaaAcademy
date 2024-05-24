@@ -11,7 +11,7 @@ import { PiNotePencilDuotone } from "react-icons/pi";
 function InternshipProgram() {
     return (
         <>
-            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 '>
+            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 animate-fadeInUp'>
                 <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
@@ -19,7 +19,7 @@ function InternshipProgram() {
 
 
                             <div className='py-3'>
-                                <Link to="/Courseregistration"><button className='p-3 bg-[#fff] text-black rounded-2xl text-lg hover:bg-blue-300'>Get Started</button></Link>
+                                <Link to="/Courseregistration"><button className='p-3 bg-[#fff] text-black rounded-2xl text-lg shadow-2xl shadow-black animate-shake hover:bg-blue-300'>Get Started</button></Link>
                             </div> </div>
 
                         <div className='md:w-1/4 w-1/2'>
@@ -30,8 +30,8 @@ function InternshipProgram() {
                 </div></div>
 
             {/* ******************************************************** */}
-            <div className='mx-auto container flex md:flex-row gap-6 py-3 flex-col justify-between'>
-                <div className='md:w-1/2'>
+            <div className='mx-auto container flex md:flex-row gap-6 py-3 flex-col justify-between '>
+                <div className='md:w-1/2 animate-fadeInRight'>
                     <h2 className='text-3xl font-bold py-2'>About The Program</h2>
                     <p className='text-lg'>Kairaa Blockchain Academy is inviting applications for the Blockchain Development and Internship Program.This Internship
                         Program and It's Availability Both Online and Offline Mode.
@@ -53,7 +53,7 @@ function InternshipProgram() {
                 </div>
 
 
-                <div className='md:w-1/2'>
+                <div className='md:w-1/2 animate-fadeInLeft'>
                     <div className=''>
                         <h2 className='text-3xl font-bold py-2'>Internship Online&Offline</h2>
                         <p className='text-lg'>Gain insight into a topic and learn the fundamentals.</p>
@@ -83,7 +83,7 @@ function InternshipProgram() {
 
             </div>
             {/* ************************************************************* */}
-            <div className='container mx-auto py-10 flex md:flex-row flex-col'>
+            <div className='container mx-auto py-10 flex md:flex-row flex-col animate-fadeInLeft'>
                 <div className='md:w-1/2'>
                     <h2 className='text-2xl font-bold py-2'>Build your subject-matter expertise</h2>
                     <p className='text-lg py-2'>This course is part of the Blockchain Specialization
@@ -110,7 +110,7 @@ function InternshipProgram() {
                 <div className='border-[#CADDFE] border-2 rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
-                            <h2 className='sm:text-4xl md:text-4xl text-2xl text-black font-bold mb-5 '>Earn a career certificate</h2>
+                            <h2 className='sm:text-4xl  md:text-4xl text-2xl text-black font-bold mb-5 '>Earn a career certificate</h2>
                             <p className='text-lg'>Add this credential to your LinkedIn profile, resume, or CV Share it on social media and in your performance review</p>
 
                         </div>

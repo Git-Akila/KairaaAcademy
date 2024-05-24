@@ -22,7 +22,7 @@ function CourseRegistration() {
     }
     return (
         <>
-            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 '>
+            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 animate-rotateAndSlideIn'>
                 <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>

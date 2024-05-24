@@ -52,10 +52,10 @@ function SelfBlockChainDev() {
                             <div className='w-3/4'>
                                 <h2 className='text-2xl font-bold py-3 border-b-2 border-b-gray-300'>Skill level: Beginner</h2>
                                 <h2 className='font-bold text-2xl py-3 '>About Blockchain Development Fundamental </h2>
-                                <p className='text-lg py-3'>The objective of this course is to provide novice candidates with a clear understanding of blockchain technology. By the end of the course, participants should be able to explain what blockchain is, how it works, and its potential applications. They will also gain insights into the
+                                <p className=' py-3'>The objective of this course is to provide novice candidates with a clear understanding of blockchain technology. By the end of the course, participants should be able to explain what blockchain is, how it works, and its potential applications. They will also gain insights into the
                                     impact of blockchain on various industries and its role in the future of technology.</p>
                                 <h2 className='text-2xl font-bold py-3'>Who Should Enroll?</h2>
-                                <ul className='list-disc text-lg leading-7'>
+                                <ul className='list-disc leading-7'>
                                     <li>This course is designed for individuals with little to no prior knowledge of blockchain technology.</li>
                                     <li>It is suitable for: Students and professionals from various backgrounds interested in understanding blockchain.</li>
                                     <li>Business professionals looking to explore how blockchain can benefit their industry. </li>                  <li>
@@ -79,12 +79,12 @@ function SelfBlockChainDev() {
 
                         <div className='mx-auto container'>
                             <h2 className='text-2xl font-bold py-4'>Learning Outcomes</h2>
-                            <ul className='list-disc text-lg py-2'>
+                            <ul className='list-disc  py-2'>
                                 <li>Understand the fundamental concepts and principles of blockchain technology.</li>
                                 <li>Analyze and make informed decisions about blockchain technology.</li>
                             </ul>
                             <h2 className='text-2xl font-bold py-3'>Prerequisites</h2>
-                            <ul className='list-disc text-lg py-3'>                              <li>Certified Ethereum Developer Course – Instructor-led or Self-paced</li>
+                            <ul className='list-disc  py-3'>                              <li>Certified Ethereum Developer Course – Instructor-led or Self-paced</li>
                                 <li>Hardware Requirements: Participants should have access to at least three virtual machines or systems, each equipped with an Intel i5
                                     or equivalent, 4 GB RAM, and an 80 GB SSD.</li>
                             </ul>

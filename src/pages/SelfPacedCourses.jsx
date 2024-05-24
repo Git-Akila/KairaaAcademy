@@ -93,7 +93,7 @@ function SelfPacedCourses() {
         
     return (
         <>
-            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 '>
+            <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 animate-fadeInUp '>
                 <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
@@ -103,16 +103,16 @@ function SelfPacedCourses() {
                             </p>
 
                             <div className='py-3'>
-                               <Link to="/courseregistration"><button className='p-3 bg-[#fff] text-black rounded-2xl text-lg hover:bg-blue-400'>Get Started</button></Link>
+                               <Link to="/courseregistration"><button className='p-3 animate-wiggle  bg-[#fff] text-black rounded-2xl text-lg hover:animate-wave hover:bg-blue-400'>Get Started</button></Link>
                             </div></div>
                         <div className='md:w-1/4 w-1/2'>
-                            <img className='rounded-2xl' src={mainhero} alt="" />
+                            <img className='rounded-2xl animate-shake' src={mainhero} alt="" />
 
                         </div>
                     </div>
                 </div></div>
             {/* ********************************************************************************************* */}
-            <div className='section '>
+            <div className='section animate-fadeInUp '>
                 <div className='text-center'>
                     <div className='sm:text-3xl text-2xl font-bold mb-5'>
                         <div>Advance in your professional goals with <span className='text-blue-700'>Kairaa Blockchain Academy</span></div>
@@ -125,10 +125,10 @@ function SelfPacedCourses() {
                 </div>
             </div>
             {/* ********************************************************************************* */}
-            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col'>
+            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col animate-fadeInRight'>
 
 
-                <div className='md:w-1/2'>
+                <div className='md:w-1/2 animate-zoomIn '>
                     <img src={image1} alt="" /></div>
                 <div className='md:w-3/4'>
                     <h1 className='sm:text-3xl text-2xl font-bold mb-5'>Get Certified,Get Ahead In Your Career</h1>
@@ -142,7 +142,7 @@ function SelfPacedCourses() {
 
             </div>
             {/* ************************************************ */}
-            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col '>
+            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col animate-fadeInLeft '>
 
 
 
@@ -156,16 +156,16 @@ function SelfPacedCourses() {
                         skills through cutting-edge curriculum designed in guidance with industry and academia.image-feature-5-min  100% online
                         courses comprising real-world data sets, virtual labs, case studies, and hands-on exercises.</p>
                 </div>
-                <div className='md:w-1/2'>
+                <div className='md:w-1/2 animate-zoomIn'>
                     <img src={image2} alt="" /></div>
 
             </div>
 
 
             {/* ************************************************ */}
-            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col'>
+            <div className='container mx-auto py-10 px-6 flex gap-8 md:flex-row flex-col animate-fadeInRight'>
 
-                <div className='md:w-1/2'>
+                <div className='md:w-1/2 animate-zoomIn'>
                     <img src={image3} alt="" /></div>
 
                 <div className='md:w-3/4'>
@@ -185,7 +185,7 @@ function SelfPacedCourses() {
             </div>
 
             {/* ************************************************************************ ***********************/}
-            <div className=' md:px-12 p-4 max-w-screen-2xl mx-auto mt-28 '>
+            <div className=' md:px-12 p-4 max-w-screen-2xl mx-auto mt-28 animate-rotateAndSlideIn '>
                 <div className='bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
                     <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='md:w-3/5'>
@@ -240,7 +240,11 @@ function SelfPacedCourses() {
                         </div>
                         <div className='w-1/2'>
                             <h2 className='text-4xl font-medium'>Flexiblity</h2>
-                            <p className='text-lg font-medium '>You can access our session vedios and meterials Anytime, anywhere.</p>
+                            <p className='text-lg font-medium py-3'>Study at your own pace and on your own schedule,
+ Access all your materials in one place, anytime you need them,
+and Utilize your time effectively by accessing learning resources on-the-go.
+ {/* Interactive and multimedia elements keep you engaged and make learning enjoyable and finally you
+ Receive continuous support and feedback from our expert team.*/}  </p> 
                             
                         </div>
                     </div>
