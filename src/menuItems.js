@@ -4,8 +4,14 @@ export const menuItems= [
       title: "HOME",
      url: "/"
     },
+    
     {
-      id: 2,
+      id:2,
+      title: "ABOUT US",
+     url: "/about-kairaa-blockchain-academy"
+    },
+    {
+      id: 3,
       title: "COURSES",
       submenu: [
         {
@@ -47,11 +53,6 @@ export const menuItems= [
         },
 
       ]
-    },
-    {
-      id: 3,
-      title: "ABOUT US",
-     url: "/about-kairaa-blockchain-academy"
     },
     {
       id: 4,

@@ -110,7 +110,7 @@ export const data1=[
 
 
 
-    {
+{
     id:2,
     mainheading:'Introduction',
     description:[

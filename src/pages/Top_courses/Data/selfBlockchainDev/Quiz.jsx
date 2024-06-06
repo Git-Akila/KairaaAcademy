@@ -8,6 +8,7 @@ function Quiz() {
     let [lock, setLock] = useState(false);
     let [score, setScore] = useState(0);
     let [result, setResult] = useState(false)
+    let [showData,setShowData]=useState(false);
 
     const checkAns = (e, ans) => {
         const correct = {
@@ -83,7 +84,7 @@ function Quiz() {
             <h2 className='font-bold text-3xl border-b-4 border-b-black mb-3 '>Assessment-1</h2>
 
 {result?<></>:<>
-            <h2 className=' mb-3 '>{index + 1}.{question.question}</h2>
+           <h2 className=' mb-3 '>{index + 1}.{question.question}</h2>
 
             <ul className=' mb-3'>
 
@@ -95,13 +96,13 @@ function Quiz() {
             <button onClick={next} className='border-gray-300 bg-blue-50 text-lg cursor-pointer hover:bg-blue-400 rounded text-gray-500 p-2 pl-3 pr-3'>Next</button>
            
             <div className='py-3 text-lg text-bold'>{index+1} of {data.length} questions.</div></>}
-            {(result < data.length-4)?<>
+        {!result &&(result > data.length-4)?<>
             <div className='bg-blue-100 text-center mx-auto container p-8 rounded'>
             <h2 className='text-xl font-bold py-3'>You Scored:{score} out of {data.length}</h2>
-            <button className='bg-blue-500 rounded p-2 mb-3' onClick={Submit}>Submit</button></div></>:
+            <button className='bg-blue-500 rounded p-2 mb-3' onClick={Submit}>Submit</button></div></>:(
             <div className='bg-blue-100 text-center mx-auto container p-8 rounded'>
             <h2 className='text-xl font-bold py-3'>You Scored:{score} out of {data.length}</h2>
-            <button className='bg-blue-500 rounded p-2 mb-3' onClick={reset}>Reset</button></div>}
+            <button className='bg-blue-500 rounded p-2 mb-3' onClick={reset}>Reset</button></div>)}
         </div>
 
         </>

@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-// import Quiz from './Quiz';
+import React from 'react';
+
 
 
 
 const CourseContent = ({e,e1}) => {
 
 
-    // const [showQuiz, setShowQuiz]=useState(false);
-
-    // const handleQuiz=()=>{
-    //     setShowQuiz(true);
-    // }
+    
 
   return (
 

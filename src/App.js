@@ -110,7 +110,7 @@ const appRouter = createBrowserRouter([
 
       },
       {
-        path: "/course/selfpaced-course/fundamentals-of-blockchain",
+        path: "/course/selfpaced-course/:id",
         element: <SelfBlockChainDev />
       },
       {

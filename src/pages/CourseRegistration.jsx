@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import Registration from '../assets/registration.jpg'
+import Registration from '../assets/registration.jpg';
+import axios from 'axios';
 
 
 
@@ -20,6 +21,20 @@ function CourseRegistration() {
 
 
     }
+
+    function handleSubmit1(name,email,mobile,courses){
+       
+        const userData={
+        name:name,
+        email,
+        mobile,
+        courses
+        }
+        axios.post("http://192.168.1.112:5001/register",userData)
+        .then((res)=>console.log(res.data))
+        .catch(e=>console.log(e));
+    }
+
     return (
         <>
             <div className='md:px-12 p-4 max-w-screen-2xl mx-auto mt-10 animate-rotateAndSlideIn'>
@@ -57,14 +72,14 @@ function CourseRegistration() {
                     <select className='lain w-full p-2 mb-5 px-3 py-3' name="courses" onChange={handleChange} required>
                         <option>Select</option>
                         <option value="Blockchain1">Blockchain Developer Fundamental</option>
-                        <option value="Crypto">Cryptocurrency Expert</option>
-                        <option value="Navigate">Navigating Cryptocurrencies</option>
-                        <option value="Bitcoin">Bitcoin cryptocurrency</option>
-                       <option value="Cryptography">Cryptocurrency Beginner Guide</option>
+                        <option value="Crypto">Blockchain Developer Professional</option>
+                        <option value="Navigate">Blockchain Developer Expert</option>
+                        <option value="Bitcoin">A Complete Solidity for Smart Programming</option>
+                       <option value="Cryptography">Certified Blockchain Trainer</option>
                        <option value="Other courses">Other Courses</option>
                     </select></lable><br/>
                     <div className='text-center'>
-                    <button  className='rounded px-12 hover:bg-blue-600  bg-blue-400 p-3 text-lg' type="submit" value="Submit Form">Submit</button>
+                    <button onClick={()=>handleSubmit1}  className='rounded px-12 hover:bg-blue-600  bg-blue-400 p-3 text-lg' type="submit" value="Submit Form">Submit</button>
                     </div>
                 </form>
 

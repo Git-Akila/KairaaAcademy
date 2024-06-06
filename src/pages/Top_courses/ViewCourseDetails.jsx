@@ -20,7 +20,7 @@ function ViewCourseDetails() {
   const Tab = ({ label, isActive, onClick }) => {
     return (
       <button
-        className={`px-4 py-2 mx-2 text-sm font-semibold focus:outline-none ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500'
+        className={`px-4 py-2 mx-2 text-xl font-semibold focus:outline-none ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500 text-xl'
           }`}
         onClick={onClick}
       >

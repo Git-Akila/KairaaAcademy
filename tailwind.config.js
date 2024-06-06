@@ -30,12 +30,12 @@ module.exports = {
 
       wave: 'wave 1s ease-in-out infinite',
 
-      fadeInUp: 'fadeInUp 5s ease-out',
-      fadeInRight: 'fadeInRight 5s ease-out',
-      fadeInLeft: 'fadeInLeft 5s ease-out',
+      fadeInUp: 'fadeInUp 1s ease-out',
+      fadeInRight: 'fadeInRight 1s ease-out',
+      fadeInLeft: 'fadeInLeft 1s ease-out',
 
-      rotateAndSlideIn: 'rotateAndSlideIn 5s ease-out forwards',
-      zoomIn: 'zoomIn 6s ease-out forwards',
+      rotateAndSlideIn: 'rotateAndSlideIn 1s ease-out forwards',
+      zoomIn: 'zoomIn 3s ease-out forwards',
 
       slideInLeft: 'slideInLeft 0.5s ease-out forwards',
 
@@ -44,7 +44,9 @@ module.exports = {
       pulse: 'pulse 1s infinite',
 
       // waterpaint: 'waterpaint 4s linear infinite',
-
+      // TypeWritter Effect
+      typing: 'typing 3.5s steps(40, end) forwards',
+      blinkCaret: 'blinkCaret 0.75s step-end infinite',
       
     },
     keyframes: {
@@ -123,6 +125,18 @@ module.exports = {
       //   '50%': { backgroundPosition: '100% 50%' },
       //   '100%': { backgroundPosition: '0% 50%' },
       // },
+
+// Typewritter Effect
+
+typing: {
+  'from': { width: '0' },
+  'to': { width: '100%' },
+},
+blinkCaret: {
+  'from, to': { borderColor: 'transparent' },
+  '50%': { borderColor: 'orange' },
+},
+
 
     },
 

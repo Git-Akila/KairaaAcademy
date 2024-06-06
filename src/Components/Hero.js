@@ -63,7 +63,7 @@ const Hero = () => {
         {info.map((dt) => {
           return (
 
-            <div className='box border-2 border-blue-400 p-4 md:h-[500px] h-auto md:w-[20vw] rounded-2xl  '>
+            <div className='box border-2 border-blue-400 p-2 md:h-[550px] h-auto md:w-[20vw] rounded-2xl  '>
               <img src={dt.img} alt={dt.heading} className='w-28 h-28' />
               <h2 className='md:text-xl text-lg font-bold p-4  font-headingFont'>{dt.heading}</h2>
               <hr />

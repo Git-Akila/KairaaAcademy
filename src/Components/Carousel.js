@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Webdev from "../carouselimages/webdev.jpeg"
-import C from "../carouselimages/c.jpeg";
+import Webdev from "../assets/newwebdev.png"
+import C from "../assets/newccourse.png";
 import Flutter from "../carouselimages/flutter.jpeg";
-import Blockchain from "../carouselimages/blockchain.jpeg";
-import Java from "../carouselimages/java.jpeg";
+import Blockchain from "../assets/newblockchain.png";
+import Java from "../assets/newjava.png";
 import Cpp from "../carouselimages/c++.jpeg"
 
 

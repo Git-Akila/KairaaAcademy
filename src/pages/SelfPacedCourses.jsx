@@ -20,6 +20,7 @@ import icon10 from '../assets/newFlutter.jpg';
 import mobile from '../assets/Mobile-Internet.jpg'
 
 
+
 function SelfPacedCourses() {
 
     const data1 = [
@@ -40,43 +41,43 @@ function SelfPacedCourses() {
         },
 
         {
-            id: 4,
+            id: 3,
             image: icon4,
             title: "Blockchain Developer Expert",
 
         },
         {
-            id: 5,
+            id: 4,
             image: icon5,
             title: "A Complete Solidity for Smart Programming",
 
         },
         {
-            id: 6,
+            id: 5,
             image: icon6,
             title: "Certified Blockchain Trainer ",
 
         },
         {
-            id: 7,
+            id: 6,
             image: icon7,
             title: "C programming Course in online",
 
         },
         {
-            id: 8,
+            id: 7,
             image: icon8,
             title: "CPP Course in Online",
 
         },
         {
-            id: 9,
+            id: 8,
             image: icon9,
             title: "Advanced java Course ",
 
         },
         {
-            id: 10,
+            id: 9,
             image: icon10,
             title: "Flutter Online Course",
 
@@ -218,11 +219,11 @@ function SelfPacedCourses() {
 
                         <div key={e.id} className='p-2 shadow-lg min-w-[15rem] bg-slate-100 rounded-md'>
                             <div className='p-2 transition-transform duration-1000 ease-in-out hover:scale-110 group-hover:filter hover:blur-sm overflow-hidden'>
-                            <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <img className='rounded' src={e.image} alt="" /></Link>
+                            <Link to={`/course/selfpaced-course/${e.id}`}> <img className='rounded' src={e.image} alt="" /></Link>
                                
                                 </div>
                             <h2 className='text-lg font-medium'>{e.title}</h2>
-                           <Link to='/course/selfpaced-course/fundamentals-of-blockchain'> <button className=' backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn Now</button></Link>
+                           <Link key={e.id} to={`/course/selfpaced-course/${e.id}`}> <button className=' backg2 text-lg text-white rounded p-3 hover:bg-blue-600'>Learn Now</button></Link>
                         </div>
                     ))}
 

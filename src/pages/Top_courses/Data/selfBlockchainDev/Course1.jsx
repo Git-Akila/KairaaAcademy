@@ -8,21 +8,23 @@ import CourseContent from "../../../Top_courses/Data/selfBlockchainDev/CourseCon
 
 var respdata = data1;
 console.log("respdata", respdata);
+
 function Course1() {
  
   const [click, setClick] = useState([]);
-  const [mydata, setData] = useState(null);
+  const [mydata, setData] = useState([]);
 
   const [showQuiz, setShowQuiz]=useState(false);
 console.log(showQuiz);
-  const handleQuiz=()=>{
+const handleQuiz=()=>{
       setShowQuiz(true);
       console.log(setShowQuiz);
-      setData(null);
+      setData(false);
       
   }
 
-   
+  const course=data1.find((e)=>e.id===1)
+   console.log(course) 
 
 
   
@@ -30,28 +32,29 @@ console.log(showQuiz);
 
 
   const handleClick = (id) => {
-    // console.log("id====>", id[0].id);
+    
     const data12 = data1;
     const data11 = data12.find((data1) => data1.id === id[0].id);
-    // console.log("data11===>", data11);
+   
 
-    // console.log("before===>", respdata);
-    setData(respdata);
+    
+    setData([data11]);
 
-    setClick(data11);
+    // setClick(data11);
+   
     respdata = [data11];
     console.log("AFter===>", respdata);
-    setClick("");
-
+    
+    setClick(' ');
    setShowQuiz(false);
-   
+  
 
     return (
       <>
        <div className="mx-auto container flex md:flex-row flex-col">
           <div className="md:w-3/4">
          
-        <CourseContent e={mydata}/>
+        {/* {course.id===1? <CourseContent   key={course.id} e={course} />:<>No Data</>} */}
         
           </div>
           <div className="md:w-1/4 w-full">
@@ -82,11 +85,11 @@ console.log(showQuiz);
      
         <div className="md:w-3/4">
        
-      {showQuiz && <Quiz/>} 
+          {showQuiz && <Quiz/>} 
 
           { 
             <>
-              {respdata.map((e, i) => {
+              {!showQuiz && respdata.map((e, i) => {
                 return (
                   <div key={i.id}>
                     <h2 className="text-2xl font-bold underline py-2 ">
@@ -176,11 +179,7 @@ console.log(showQuiz);
           </ul>
         </div>
       </div>
-      {/* {/* ____________________________________________________________________________________________  */}
-
-      {/* <div>
-        <Quiz />
-      </div> */}
+      
     </>
   );
 }

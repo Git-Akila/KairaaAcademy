@@ -20,7 +20,7 @@ const Newnav = () => {
     <>
     <div className='md:flex justify-evenly h-24  md:items-center border-b-2 text-lg font-medium py-4 hidden '>
         <div>
-          <img src={Logo} className='h-[130px] p-4' />
+         <Link to="/"> <img src={Logo} className='h-[130px] p-4' /></Link>
         </div>
         <div>
           <p>9:00 AM - 5:30 PM IST</p>
@@ -37,9 +37,7 @@ const Newnav = () => {
 
 
         </div>
-        <div>
-        <Link to='/contact'>  <button className='  text-white w-fit md:px-6 md:mt-1 p-2 md:text-xl font-bold text-lg rounded-md  bg-blue-500 cursor-pointer'>Contact Us</button></Link>
-        </div>
+       
       </div>
     <nav className='desktop-nav'>
 
