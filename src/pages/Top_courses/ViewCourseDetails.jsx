@@ -1,9 +1,15 @@
-import * as React from 'react';
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 
-import { Link } from 'react-router-dom';
-import { courses1 } from '../Top_courses/Data/OthercoursesData';
+import { useParams } from "react-router-dom";
+
+import { Link } from "react-router-dom";
+import { courses1 } from '../Top_courses/Data/OthercoursesData';     // OtherCourses 
+import '../Top_courses/ViewCourseDetails.css';
 
 
 
@@ -11,121 +17,157 @@ function ViewCourseDetails() {
 
   const { id } = useParams();
 
-  const course = courses1.find(course => course.id === parseInt(id));
-  console.log(course)
+  const course = courses1.find((course) => course.id === parseInt(id));
 
-  const [index1, setIndex] = useState(null);
-  const [activeTab, setActiveTab] = useState(0);
-
-  const Tab = ({ label, isActive, onClick }) => {
-    return (
-      <button
-        className={`px-4 py-2 mx-2 text-xl font-semibold focus:outline-none ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500 text-xl'
-          }`}
-        onClick={onClick}
-      >
-        {label}
-      </button>
-    );
-  };
-
-  const TabContent = ({ children }) => {
-    return <div className="mt-4">{children}</div>;
-  };
-
-  const Tabs = ({ children }) => {
-
-    return (
-      <div>
-        <div className="flex">
-          {children.map((child, index) => (
-            <Tab
-              key={index}
-              label={child.props.label}
-              isActive={index === activeTab}
-              onClick={() => setActiveTab(index)}
-            />
-          ))}
-        </div>
-        <div>
-          {children.map((child, index) =>
-            index === activeTab ? <TabContent key={index}>{child.props.children}</TabContent> : null
-          )}
-        </div>
-      </div>
-    );
-  };
-  //**************************************************************************************************** */   
+  
 
 
+  const [index1, setIndex] = React.useState(null);
+  
 
-
-  function ViewOrNot(i) {
-
+    function ViewOrNot(i) {
     if (index1 === i) {
       setIndex(null);
-      setActiveTab(activeTab)
     } else {
       setIndex(i);
-      setActiveTab(activeTab)
     }
   }
 
+  const [value, setValue] = React.useState("1");
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
+  return (
+    <>
+  
+    {/* *************************************************************************************************** */}
+      <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-4 animate-fadeInUp context ">
+        <div className=" rounded-xl rounded-br-[80px]  md:p-9 px-4 py-9  ">
 
-  return (<>
-      <div className='mx-auto py-5 px-10 mt-4 justify-center bg-blue-300'>
-        <div className='w-3/4'>
-          <h2 className='fontstyle2 py-3'>{course.name}</h2>
-          <p className='text-lg py-3 font-bold '>{course.description} </p>
+         
+          <div className="flex flex-col md:flex-row justify-between items-center   gap-10 ">
+            {/* *********************************************************************************** */}
+       
+            <div className="md:w-3/4 ">
+            <h2 className="fontstyle2 text-[#fff] py-3">{course.name}<span className="text-black text-5xl animate-spin">___</span></h2>
+              <p className="text-lg py-3 text-[#fff] font-bold ">{course.description} </p>
 
-          <Link to="/CourseRegistration"><button className="bg-white text-center text-lg p-2  active:bg-blue-500 py-3 rounded-md">Register Now</button></Link>
-        </div>
-      </div>
-
-      {/* ************************************************************************************************************* */}
-      <div className='mx-auto container '>
-        <Tabs>
-          <div label="About" className='mx-auto section flex md:flex-row flex-col gap-10'>
-            <div className='flex md:flex-row flex-col justify-between'>
-              <div className='md:w-1/2'>
-                <h2 className='text-2xl font-bold py-3'>{course.heading}</h2>
-                <p className='text-lg'>{course.deshead}</p>
-
-
-                <h2 className='text-2xl font-bold py-3'>{course.heading1}</h2>
-
-                {course.desheading1.map((e) => { return (<p className='text-lg'>{e}</p>) })}</div>
-
-              <div className='md:w-1/4 p-5 m-10 bg-gray-200 rounded'>
-                {course.heroSec.map((e, i) => {
-                  return <p className='py-3 border-b-2 border-b-gray-400' key={i}>{e.symbol}{e.content}</p>
-
-                })}
+              <div className="py-3">
+                <Link to="/CourseRegistration">
+                 <button className="hover:bg-white cursor-pointer text-center  p-2 animate-shake text-blue-700 font-medium bg-gray-50 py-3 rounded-md">
+                    START NOW
+                  </button>
+                </Link>
               </div>
             </div>
+          
           </div>
-          {/* </div> */}
+         
+        </div>
+        
+      </div>
+      <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+     
+    
+      {/* ************************************************************************************************************* */}
+      <Box sx={{ width: "100%", typography: "body1" }}>
+        <TabContext value={value}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <TabList
+              className="justify-center text-center"
+              onChange={handleChange}
+              aria-label="lab API tabs example"
+            >
+              <Tab
+                sx={{
+                  marginLeft: { xs: 10, sm: 5, md: 40 },
 
+                  fontSize: { xs: "0.8rem", sm: "1rem", md: "1.1rem" },
+                  fontWeight: { xs: "normal", sm: "bold", md: "bolder" },
+                }}
+                label="Overview"
+                value="1"
+              />
+              <Tab
+                sx={{
+                  marginLeft: { xs: 10, sm: 5, md: 40 },
+                  fontSize: { xs: "0.8rem", sm: "1rem", md: "1.1rem" },
+                  fontWeight: { xs: "noraml", sm: "bold", md: "bolder" },
+                }}
+                label="Syllabus"
+                value="2"
+              />
+            </TabList>
+          </Box>
+          <TabPanel value="1">
+         
+<div  className='mx-auto  flex md:flex-row flex-col gap-10'>
+<div className="flex mx-auto m-3 container md:flex-row flex-col justify-between">
+              <div className="md:w-3/4">
+                <h2 className="md:text-2xl xs:text-xl font-bold py-3">
+                  {course.heading}
+                </h2>
+                <p className="md:text-lg">{course.deshead}</p>
+
+                <h2 className="md:text-2xl xs:text-xl font-bold py-3">
+                  {course.heading1}
+                </h2>
+
+                {course.desheading1.map((e) => {
+                  return <p className="text-lg">{e}</p>;
+                })}
+              </div>
+              <div className="md:w-1/4 p-5  bg-gradient-to-t from-blue-100 to-blue-400 rounded">
+                {course.heroSec.map((e, i) => {
+                  return (
+                    <p className="py-3 border-b-2 border-b-gray-200" key={i}>
+                      {e.symbol}
+                      {e.content}
+                    </p>
+                  );
+                })}
+              </div>{" "}
+            </div>
+         
+            </div></TabPanel>
 
           {/* ************************************************************************************************** */}
-          <div label="Syllabus" className='container mx-auto  border-2 border-gray-200 '>
-            <div className=' px-3 py-3 border-2 border-gray-200'>
-              <h1 className='text-3xl font-bold py-3'>{course.syllabusheading}</h1>
-              <p className='text-lg font-medium'>{course.syllabus}</p></div>
+          <TabPanel value="2">
+        
 
-
-            <div className='container  mx-auto border-2 border-gray-300'>
+           
+            <div className="container bg-gradient-to-t from-blue-400 to-blue-100  mx-auto p-5 md:mr-28 md:mt-8 md:ml-28 border-2 border-gray-300">
+              <div className="border-2 p-2 border-b-gray-200">
+                <h1 className="md:text-3xl xs:text-xl font-bold py-2">{course.syllabusheading}</h1>
+                <p className='text-lg font-medium'>{course.syllabus}</p></div>
               {course.topics.map((ctop, i) => {
                 return (
                   <>
-                    <div className='flex p-5 justify-between'><h1 className='text-xl m-2 font-bold py-3 ' key={ctop.id}>{ctop.name}</h1>
+                    <div className="flex justify-between md:p-5">
+                      <h1
+                        className="md:text-xl  xs:font-medium md:font-bold py-2 "
+                        key={ctop.id}
+                      >{ctop.name}</h1>
                       <button className='mx-20 font-bold ' onClick={() => ViewOrNot(ctop.id)}>{index1 === ctop.id ? "⊝" : "⊕"}</button></div>
 
-                    {index1 === ctop.id && (<ul className=' list-disc px-20 leading-10 text-lg border-b-2 border-b-gray-300'>
+                    {index1 === ctop.id && (<ul className="  px-20 leading-10 text-lg text-[#2e2d2d]  border-b-2 border-b-gray-300">
                       {ctop.content.map((e) => {
-                        return <li key={i + 100}>{e}</li>
+                        return <li key={i + 100}>🌠{e}</li>;
                       })}
                     </ul>)}
 
@@ -134,8 +176,11 @@ function ViewCourseDetails() {
 
               })}
             </div>
-          </div>
-        </Tabs></div>
+          
+          </TabPanel>
+        </TabContext>
+      </Box>
+        
 
 
     </>

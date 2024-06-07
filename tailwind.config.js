@@ -47,9 +47,16 @@ module.exports = {
       // TypeWritter Effect
       typing: 'typing 3.5s steps(40, end) forwards',
       blinkCaret: 'blinkCaret 0.75s step-end infinite',
+
+
       
     },
     keyframes: {
+
+
+
+
+
       spin: {
         '0%': { transform: 'rotate(0deg)' },
         '100%': { transform: 'rotate(360deg)' },
@@ -120,11 +127,7 @@ module.exports = {
       },
 
 
-      // waterpaint: {
-      //   '0%': { backgroundPosition: '0% 50%' },
-      //   '50%': { backgroundPosition: '100% 50%' },
-      //   '100%': { backgroundPosition: '0% 50%' },
-      // },
+     
 
 // Typewritter Effect
 
