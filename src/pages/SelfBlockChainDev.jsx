@@ -63,13 +63,13 @@ function SelfBlockChainDev() {
           <h2 className="md:text-2xl xs:text-lg text-2xl p-5 leading-9 font-bold ml-5">❝{Self.Subnewhead}❞</h2>
           </div>
           <div className="md:w-1/4 xs:justify-center xs:text-center p-5 ">
-          <button className="button relative py-3 px-8  text-3xl  font-bold text-extrabold border-4 border-white text-white  rounded-lg shadow transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-[#fec195] hover:shadow-lg">
+          <button className="button relative py-3 px-8 xs:text-lg  md:text-3xl  font-bold text-extrabold border-2 border-white text-white  rounded-lg shadow transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-[#fec195] hover:shadow-lg">
           
-      <span className="star-1 animate-wiggle  absolute top-1/5 left-1/5 w-6 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0.05,0.83,0.43,0.96)]">⚝</span>
-      <span className="star-2 animate-spin absolute top-[45%] left-[45%] w-4 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
-      <span className="star-3 animate-shake absolute top-2/5 left-2/5 w-1 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]">✰</span>
+      <span className="star-1 animate-wiggle  absolute top-1/6 left-1/5 w-5 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0.05,0.83,0.43,0.96)]">⚝</span>
+      <span className="star-2 animate-spin absolute top-[45%] left-[45%] w-1 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
+      <span className="star-3 animate-shake absolute top-2/5 left-2/5 w-1 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
       <span className="star-4 animate-spin absolute top-1/5 left-2/5 w-2 h-auto filter drop-shadow-0 transition-all duration-800 ease-[cubic-bezier(0,0.4,0,1.01)]">✰</span>
-      <span className="star-5 absolute top-1/4 left-[45%] w-4 h-auto filter drop-shadow-0 transition-all duration-600 ease-[cubic-bezier(0,0.4,0,1.01)]">✰</span>
+      <span className="star-5 animate-wiggle absolute top-1/4 left-[45%] w-3 h-auto filter drop-shadow-0 transition-all duration-600 ease-[cubic-bezier(0,0.4,0,1.01)]">⚝</span>
       <span className="star-6 absolute top-1/20 left-1/2 w-1 h-auto filter drop-shadow-0 transition-all duration-800 ease"></span>
       <svg className="hidden">
         <defs>
