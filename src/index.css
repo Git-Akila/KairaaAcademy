@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #09849a, #c565f9);
+}
+
 .scrollbar-hidden {
     scrollbar-width: none; 
     -ms-overflow-style: none; 

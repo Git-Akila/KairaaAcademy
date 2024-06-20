@@ -10,9 +10,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        "headingFont":["Platypi", "serif"],
+        "headingFont":['Nunito Sans', 'sans-serif'],
         "paraFont":['Nunito Sans', 'sans-serif'],
         "custom1": ['Nunito Sans', 'sans-serif'], 
+        // "headingFont":["Platypi", "serif"],
       }
     },
     screens:{

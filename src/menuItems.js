@@ -56,8 +56,8 @@ export const menuItems= [
     },
     {
       id: 4,
-      title: "RESOURCES",
-     url: "/resources"
+      title: "BLOGS",
+     url: "/blogs"
     },
     {
       id: 5,

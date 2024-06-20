@@ -40,7 +40,7 @@ function ViewCourseDetails1() {
         <div className="bg-[#CADDFE] rounded-xl rounded-br-[80px] md:p-9 px-4 py-9">
           <div className="flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="md:w-3/4">
-              <h2 className="fontstyle2 py-3">{course.name}</h2>
+              <h2 className="fontstyle2 font-headingFont py-3">{course.name}</h2>
               <p className="text-lg py-3 font-bold ">{course.description} </p>
 
               <div className="py-3">
@@ -87,12 +87,12 @@ function ViewCourseDetails1() {
           <TabPanel value="1">
             <div className="flex mx-auto m-3 container md:flex-row flex-col justify-between">
               <div className="md:w-3/4">
-                <h2 className="md:text-2xl xs:text-xl font-bold py-3">
+                <h2 className="md:text-2xl font-headingFont xs:text-xl font-bold py-3">
                   {course.heading}
                 </h2>
                 <p className="md:text-lg">{course.deshead}</p>
 
-                <h2 className="md:text-2xl xs:text-xl font-bold py-3">
+                <h2 className="md:text-2xl font-headingFont xs:text-xl font-bold py-3">
                   {course.heading1}
                 </h2>
 
@@ -101,6 +101,9 @@ function ViewCourseDetails1() {
                 })}
               </div>
               <div className="md:w-1/4 p-5  bg-gradient-to-t from-blue-100 to-blue-400 rounded">
+              <h2 className="md:text-xl font-headingFont xs:text-xl font-bold py-3">
+                  Course Feature
+                </h2>
                 {course.heroSec.map((e, i) => {
                   return (
                     <p className="py-3 border-b-2 border-b-gray-200" key={i}>
@@ -115,10 +118,10 @@ function ViewCourseDetails1() {
           <TabPanel value="2">
             <div className="container bg-gradient-to-t from-blue-400 to-blue-100  mx-auto p-5 md:mr-28 md:mt-8 md:ml-28 border-2 border-gray-300">
               <div className="border-2 p-2 border-b-gray-200">
-                <h1 className="md:text-3xl xs:text-xl font-bold py-2">
+                <h1 className="md:text-3xl xs:text-xl font-headingFont font-bold py-2">
                   {course.syllabusheading}
                 </h1>
-                <p className="md:text-lg font-medium">{course.syllabus}</p>
+                <p className="md:text-lg  font-medium">{course.syllabus}</p>
               </div>
               {course.content.map((ctop, i) => {
                 return (
@@ -141,7 +144,7 @@ function ViewCourseDetails1() {
                     {index1 === ctop.id && (
                       <ul className="  px-20 leading-10 text-lg text-[#2e2d2d]  border-b-2 border-b-gray-300">
                         {ctop.content.map((e) => {
-                          return <li key={i + 100}>🌠{e}</li>;
+                          return <li className="" key={i + 100}>🌠{e}</li>;
                         })}
                       </ul>
                     )}

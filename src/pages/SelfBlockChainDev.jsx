@@ -5,6 +5,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import '../pages/SelfBlockchainDev.css';
+import {Link} from 'react-router-dom';
 
 import { SelfData } from "../../src/pages/Top_courses/Data/SelfpacedBlockchainData1";
 
@@ -16,7 +17,7 @@ function SelfBlockChainDev() {
   // _____________________________CURRICULAM_____________________________________________ //
   const Self4 = Self.SelfData2;
   const Self5 = Self4.map((e) => e.data).flat();
-  const [list, setList] = React.useState(Self5);
+  const [list] = React.useState(Self5);
   const [filteredList, setFilteredList] = React.useState([]);
 
   const handleChange1 = (id) => {
@@ -54,7 +55,7 @@ function SelfBlockChainDev() {
         <div className="flex md:flex-row flex-col bg-gradient-to-r from-[#002062] bg-blue-600 to-blue-500 shadow-gray-200 shadow-xl md:p-14 mt-2 p-2 animate-typing rounded ">
           <div className="flex flex-col gap-3 ">
             <div className="md:w-1/2">
-          <h2 className="md:text-4xl xs:text-xl  font-bold ml-5   border-l-4  md:whitespace-nowrap letter-spacing tracking-wider border-black p-4 animate-blinkCaret">
+          <h2 className="md:text-[40px] xs:text-xl font-headingFont font-bold ml-5   border-l-4  md:whitespace-nowrap letter-spacing tracking-wider border-black p-4 animate-blinkCaret">
             {Self.heading2}
           </h2>
           </div>
@@ -63,7 +64,7 @@ function SelfBlockChainDev() {
           <h2 className="md:text-2xl xs:text-lg text-2xl p-5 leading-9 font-bold ml-5">❝{Self.Subnewhead}❞</h2>
           </div>
           <div className="md:w-1/4 xs:justify-center xs:text-center p-5 ">
-          <button className="button relative py-3 px-8 xs:text-lg  md:text-3xl  font-bold text-extrabold border-2 border-white text-white  rounded-lg shadow transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-[#fec195] hover:shadow-lg">
+          <Link to='/courseregistration'><button className="button font-headingFont relative py-3 px-8 xs:text-lg  md:text-3xl  font-bold text-extrabold border-2 border-white text-white  rounded-lg shadow transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-[#fec195] hover:shadow-lg">
           
       <span className="star-1 animate-wiggle  absolute top-1/6 left-1/5 w-5 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0.05,0.83,0.43,0.96)]">⚝</span>
       <span className="star-2 animate-spin absolute top-[45%] left-[45%] w-1 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
@@ -83,73 +84,24 @@ function SelfBlockChainDev() {
           </filter>
         </defs>
       </svg>
-      {Self.button1}</button> <p className="mt-3 py-3" >⭒⭒{Self.button2}⭒⭒</p>
+      {Self.button1}</button> </Link><p className="mt-3 py-3" >⭒⭒{Self.button2}⭒⭒</p>
     
     </div>
     
    
     
-          {/* <button className="bg-blue-200 text-lg hover:bg-blue-400 rounded p-2">
-            {Self.button2}
-          </button> */}
+       
         </div>{" "}
           </div>
-          <div className="md:w-1/2   card">
-          <div className="bg xs:text-center overflow-hidden">  <img className="rounded-xl object-cover overflow-hidden" src={Self.image1} alt=" "/></div>
+          <div className="md:w-1/2  md:h-85  card">
+          <div className="bg md:w-[335px] xs:w-[300px] w-[300px] h-65 xs:h-65  md:h-67 xs:text-center overflow-hidden">  <img className="rounded-xl object-cover overflow-hidden" src={Self.image1} alt=" "/></div>
         <div className="blob">
           </div>
           </div>
         </div>
         </div>
 
-      {/* <div className="mx-auto  container mt-3 flex md:flex-row flex-col p-3 justify-between">
-        <div className="p-2 mx-auto">
-          <h2 className="text-xl">{Self.heading2}</h2>
-          <p className="text-gray-500 py-2">
-            {Self.teacher}
-            <span className="text-lg font-bold ml-3 text-black">
-              {Self.teacher1}
-            </span>
-          </p>
-        </div>
-        <div className="mx-auto px-2">
-          {/* <button className="rounded hover:bg-green-400 hover:text-black mr-4  text-green-600 text-2xl  font-bold p-1 w-[110px] border-2 border-black">
-            {Self.button1}
-          </button> */}
-
-{/* <button className="button relative py-3 px-8 bg-[#fec195] text-lg font-medium text-[#181818] border-4 border-[#fec195] rounded-lg shadow transition-all duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-[#fec195] hover:shadow-lg">
-      {Self.button1}
-      <span className="star-1 absolute top-1/5 left-1/5 w-6 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0.05,0.83,0.43,0.96)]"></span>
-      <span className="star-2 absolute top-[45%] left-[45%] w-4 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
-      <span className="star-3 absolute top-2/5 left-2/5 w-1 h-auto filter drop-shadow-0 transition-all duration-1000 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
-      <span className="star-4 absolute top-1/5 left-2/5 w-2 h-auto filter drop-shadow-0 transition-all duration-800 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
-      <span className="star-5 absolute top-1/4 left-[45%] w-4 h-auto filter drop-shadow-0 transition-all duration-600 ease-[cubic-bezier(0,0.4,0,1.01)]"></span>
-      <span className="star-6 absolute top-1/20 left-1/2 w-1 h-auto filter drop-shadow-0 transition-all duration-800 ease"></span>
-      <svg className="hidden">
-        <defs>
-          <filter id="drop-shadow" height="130%">
-            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-            <feOffset dx="2" dy="2" result="offsetblur" />
-            <feMerge>
-              <feMergeNode />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
-    </button> */} 
-
-
-          {/* ********************************************************************************* */}
-          {/* <button className="bg-blue-200 text-lg hover:bg-blue-400 rounded p-2">
-            {Self.button2}
-          </button>
-        </div>{" "}
-      </div>
-      <div className="p-5 container mx-auto">
-        <img className="" src={Self.image} alt="" />{" "}
-      </div> */}
-
+      
       <Box sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -182,14 +134,14 @@ function SelfBlockChainDev() {
           <TabPanel value="1">
             <div className="flex xs:p-3 md:flex-row flex-col mx-auto container ">
               <div className="md:w-3/4  ">
-                <h2 className=" text-xl md:text-2xl font-bold py-3 border-b-2 border-b-gray-300">
+                <h2 className=" text-xl md:text-2xl font-headingFont font-bold py-3 border-b-2 border-b-gray-300">
                   {Self.heading3}
                 </h2>
-                <h2 className="font-bold text-xl md:text-2xl py-3 ">
+                <h2 className="font-bold font-headingFont text-xl md:text-2xl py-3 ">
                   {Self.heading4}
                 </h2>
                 <p className=" py-3">{Self.paragraph1}</p>
-                <h2 className="text-2xl font-bold py-3">{Self.heading5}</h2>
+                <h2 className="text-2xl font-headingFont font-bold py-3">{Self.heading5}</h2>
                 <ul className="list-disc leading-7">
                   {Self.paragraph2.map((e1) => {
                     return <li>{e1}</li>;
@@ -197,7 +149,7 @@ function SelfBlockChainDev() {
                 </ul>
 
 
-                <h2 className="text-2xl font-bold py-4">{Self.heading7}</h2>
+                <h2 className="text-2xl font-headingFont font-bold py-4">{Self.heading7}</h2>
               <ul className="list-disc  py-2">
                 {Self.paragraph4.map((e4) => {
                   return <li>{e4}</li>;
@@ -207,7 +159,7 @@ function SelfBlockChainDev() {
 
               <div className=" rounded-lg h-auto md:mt-20 mt-5 p-3 text-lg ">
               <div className=" leading-7 rounded-xl bg-gradient-to-r  to-blue-50 from-blue-300">
-                <h2 className="text-xl text-center  font-bold">{Self.heading6}</h2>
+                <h2 className="text-xl text-center font-headingFont  font-bold">{Self.heading6}</h2>
 
                 {Self.paragraph3.map((e2) => {
                   return (
@@ -247,7 +199,7 @@ function SelfBlockChainDev() {
                         <div className="md:w-3/4 rounded-lg bg-gradient-to-tr from-blue-200 to-slate-50 p-3 leading-10 ">
                           {filteredList.map((e2) => (
                             <div key={e2.id} className=" p-3  leading-10">
-                              <h1 className="text-black font-bold md:text-2xl mb-3 py-3 xs:text-lg ">
+                              <h1 className="text-black  font-bold md:text-2xl mb-3 py-3 xs:text-lg ">
                                 {e2.mainheading}
                               </h1>
                               <p>{e2.description}</p>
@@ -272,13 +224,13 @@ function SelfBlockChainDev() {
                 return (
                   <>
                   <div className="md:w-3/4 gap-5 p-5 leading-10">
-                      <h2 className="md:text-2xl xs:text-xl font-bold mb-2">
+                      <h2 className="md:text-2xl font-headingFont xs:text-xl font-bold mb-2">
                         {e.mainheading}
                       </h2>
                       {e.description.map((e) => (
                         <p>{e}</p>
                       ))}
-                      <h2 className="font-bold text-xl mb-2 py-2">
+                      <h2 className="font-bold font-headingFont text-xl mb-2 py-2">
                         {e.heading}
                       </h2>
 
@@ -315,7 +267,7 @@ function SelfBlockChainDev() {
                   <>
                     <div className="md:w-1/4 p-3 mt-2">
                       <div className="gap-1 leading-7 overflow-hidden ">
-                        <h2 className="font-bold text-lg mb-2">{e.start}</h2>
+                        <h2 className="font-bold font-headingFont text-lg mb-2">{e.start}</h2>
 
                         <ul className="leading-10 border-2 border-gray-400 p-2 bg-blue-50 ">
                           {e.data.map((e) => {

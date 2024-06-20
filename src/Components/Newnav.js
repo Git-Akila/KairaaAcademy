@@ -7,8 +7,10 @@ import MenuItem from "./MenuItem";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaBars, FaTimes } from 'react-icons/fa';
-// logo
+// logo  
 import Logo from "../carouselimages/logo.webp"
+
+
 
 
 
@@ -18,25 +20,34 @@ const Newnav = () => {
 
   return (
     <>
-    <div className='md:flex justify-evenly h-24  md:items-center border-b-2 text-lg font-medium py-4 hidden '>
+    <div className='md:flex justify-between h-24 mx-5 md:items-center  text-lg font-medium py-4 hidden '>
         <div>
          <Link to="/"> <img src={Logo} className='h-[130px] p-4' /></Link>
         </div>
         <div>
           <p>9:00 AM - 5:30 PM IST</p>
         </div>
-        <div>
-          <div className='flex gap-4'>
-            <IoCall />
+     
+          <div className='flex flex-col gap-4'>
+          <div className='flex items-center gap-2'>
+            <IoCall size={20} />
             <p>+91 7092774077</p>
           </div>
-          <div className='flex gap-4'>
-            <MdEmail />
-            <p>support@kairaaacademy.com</p>
+          <div className='flex gap-4 items-center'>
+            <MdEmail  size={20}/>
+            support@kairaaacademy.com
           </div>
 
 
         </div>
+        
+        <div className='gap-4 flex text-[#fff] font-bold'>
+          <button className='bg-gradient-to-r from-cyan-500 to-[#CB77F7] p-2 rounded-xl hover:animate-wave'>Login</button>
+          <button className='bg-gradient-to-r from-cyan-500 to-[#CB77F7] p-2 rounded-xl hover:animate-wave'>SignUp</button>
+
+       </div>
+        
+       
        
       </div>
     <nav className='desktop-nav'>
