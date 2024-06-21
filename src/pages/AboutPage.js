@@ -99,9 +99,9 @@ const AboutPage = () => {
           <img  src={Image} alt=""/>
         </div>
         <div className="flex flex-col gap-4 w-5/6 leading-10 text-md font-medium items-center text-2xl  font-paraFont ">
-          <h1 className="leading-10 font-bold md:text-3xl text-2xl text-center text-[#15265D] font-headingFont">
+          <h1 className="leading-10 font-bold md:text-3xl text-2xl  text-[#15265D] font-headingFont">
             Kairaa Blockchain Academy
-            <span className="text-gradient">
+            <span className="text-gradient text-center">
               {" "}
               Your Gateway to Blockchain Mastery
             </span>
