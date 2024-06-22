@@ -213,8 +213,7 @@ function SelfPacedCourses() {
                 To get a new way of improvement and Wonderful turning point of
                 your Life. We have Interactive and multimedia elements keep you
                 engaged and make learning enjoyable and finally you Receive
-                continuous support and feedback from our expert team. So Don't
-                hesitate Coders!
+                continuous support and feedback from our expert team.So, coders, don't hesitate!
               </p>
 
               <div className="py-3">

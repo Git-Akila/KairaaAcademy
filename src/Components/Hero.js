@@ -8,12 +8,12 @@ import block3 from "../carouselimages/003-online-course.png";
 import block4 from "../carouselimages/technology.png";
 import { Link } from "react-router-dom";
 
-import icon1 from "../assets/javajava.jpg";
-import icon2 from "../assets/jajavava.jpg";
-import icon4 from "../assets/newjavahomepage.png";
-import icon5 from "../assets/HomeC.png";
-import icon6 from "../assets/HomeC.png";
-import icon7 from "../assets/HomeC.png";
+import icon1 from "../assets/HomeBlock1.png";
+import icon2 from "../assets/HomeProffessional.png";
+import icon4 from "../assets/HomeExpert.png";
+import icon5 from "../assets/HomeSolidity.png";
+import icon6 from "../assets/HomeTrainer.png";
+import icon7 from "../assets/HomeC1.png";
 import icon8 from "../assets/newjavahomepage.png";
 import icon9 from "../assets/newjavahomepage.png";
 import icon10 from "../assets/newjavahomepage.png";
@@ -32,13 +32,13 @@ const Hero = () => {
     {
       id: 2,
       image: icon2,
-      title: "Blockchain Developer Professional ",
+      title: "Blockchain Developer Professional Course",
     },
 
     {
       id: 3,
       image: icon4,
-      title: "Blockchain Developer Expert",
+      title: "Blockchain Developer Expert Online Course",
     },
     {
       id: 4,
@@ -48,12 +48,12 @@ const Hero = () => {
     {
       id: 5,
       image: icon6,
-      title: "Certified Blockchain Trainer ",
+      title: "Certified Blockchain Trainer Online Course",
     },
     {
       id: 6,
       image: icon7,
-      title: "C programming Course in online",
+      title: "C programming Language Online Course ",
     },
      ];
 
@@ -221,7 +221,7 @@ const Hero = () => {
             {data1.map((e) => (
               <div
                 key={e.id}
-                className=" shadow-xl min-w-[12rem] w-[360px] h-[400px] bg-slate-100 rounded-2xl transition-transform duration-1000 ease-in-out hover:scale-110"
+                className=" shadow-xl min-w-[12rem] w-[360px] h-[450px] bg-slate-100 rounded-2xl transition-transform duration-1000 ease-in-out hover:scale-110"
               >
                 <div className="  group-hover:filter  overflow-hidden">
                   <Link to={`/course/selfpaced-course/${e.id}`}>
@@ -229,17 +229,17 @@ const Hero = () => {
                     <img className="rounded-t-2xl " src={e.image} alt="" />
                   </Link>
                 </div>
-                <div className="bg-gradient-to-r shadow-inner shadow-black from-cyan-500 to-[#CB77F7] rounded   p-4">
+                <div className="bg-gradient-to-r shadow-inner shadow-black from-cyan-500 to-[#CB77F7] rounded   p-5">
                   <h2 className="text-xl text-[#fff] font-bold">{e.title}</h2>
                 </div>
-                <div style={borderStyle} className=" ml-24 my-10">
+                <div style={borderStyle} className=" ml-24 my-5">
                   <div
                     style={gradientBorderStyle}
                     className="borderbutton"
                   ></div>
                   <Link key={e.id} to={`/course/selfpaced-course/${e.id}`}>
                     {" "}
-                    <button style={button} className="text-lg font-bold]">
+                    <button style={button} className="text-lg font-bold">
                       Learn more
                     </button>
                   </Link>

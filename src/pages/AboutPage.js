@@ -171,8 +171,8 @@ const AboutPage = () => {
       <div className="flex gap-8 md:px-24 px-8 md:py-12 py-8  md:flex-row items-center bg-[#F7F4FD]">
         <div className="flex flex-col gap-4 md:w-3/3 w-full text-md font-medium items-center md:text-xl text-lg md:px-8 font-paraFont leading-10 text-center">
           <h1 className=" font-bold md:text-3xl text-xl text-center text-[#15265D] font-headingFont md:p-4">
-            Learn in-demand tech skills{" "}
-            <span className="font-extrabold text-gradient">தமிழில்</span>
+            Learn in-demand {" "}
+            <span className="font-extrabold text-gradient">tech skills</span>
           </h1>
 
           {section3.map((e) => (

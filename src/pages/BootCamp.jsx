@@ -139,16 +139,18 @@ function BootCamp() {
       <div className="container mx-auto">
         <div className="mx-10">
         <h2 className="md:text-2xl text-lg font-headingFont font-bold py-2">Program Details</h2>
+        <div className="container mx-auto">
+        <div className="mx-10 flex justify-center items-center">
         <table className="min-w-full divide-y m-4 divide-gray-200 border-2 border-gray-200">
   <thead className="bg-gray-50">
     <tr>
-      <th className="text-lg text-left pl-10 p-2 font-headingFont font-medium text-gray-800 uppercase tracking-wider">
+      <th className="text-lg text-left pl-10 p-2 font-headingFont font-bold text-gray-800 uppercase tracking-wider">
         Sessions
       </th>
-      <th className="font-medium text-center font-headingFont text-gray-800 uppercase tracking-wider">
+      <th className="text-lg font-bold text-center font-headingFont text-gray-800 uppercase tracking-wider">
         Duration
       </th>
-      <th className="text-lg text-left font-headingFont pl-16 font-medium text-gray-800 uppercase tracking-wider">
+      <th className="text-lg text-left font-headingFont pl-16 font-bold text-gray-800 uppercase tracking-wider">
         Covered Topics
       </th>
     </tr>
@@ -171,7 +173,7 @@ function BootCamp() {
     ))}
   </tbody>
 </table>
-
+</div></div>
         {/* <table className="min-w-full divide-y m-4  divide-gray-200 border-2 border-gray-200">
           <thead className="bg-gray-50  ">
             <th className=" text-lg text-left pl-10 p-2  font-medium text-gray-800 uppercase tracking-wider">
