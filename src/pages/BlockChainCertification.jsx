@@ -25,6 +25,23 @@ function BlockChainCertification() {
       ],
     },
   ];
+
+  const section3 = [
+    {
+      id: 1,
+      heading: " DURATION, MODE OF DELIVERY",
+      paragraph:
+        "After successfully finishing the Blockchain Development online courses, You will be awarded a certificate of completion. This certificate serves as tangible proof of Your dedication, commitment, and newly acquired skills in the specific subject matter covered by the course. It signifies the culmination of their efforts in engaging with course materials, completing assignments, and mastering the concepts presented. The candidates will be assigned to a mentor throughout the duration.",
+    },
+  ];
+  const section4 = [
+    {
+      id: 1,
+      heading: " CERTIFICATION",
+      paragraph:
+        "Upon completing the live project training, The students are to submit an internship report to the mentor. The Blockchain Courses of certificate will be awarded based on the candidate’s performance during the internship.",
+    },
+  ];
   return (
     <>
       <div className="md:px-12 p-2 max-w-screen-2xl  mx-auto mt-10   ">
@@ -50,7 +67,7 @@ function BlockChainCertification() {
           </div>
         </div>
       </div>
-      {/* ****************************************************************************************** */}
+      {/* ****************************************************************************** */}
       {section2.map((e) => {
         return (
           <>
@@ -87,53 +104,52 @@ function BlockChainCertification() {
           </>
         );
       })}
-      {/* **************************************************************************************** */}
-      <div className="mx-auto container flex md:flex-row xs:flex-col-reverse">
-        <div className="md:w-1/2 ">
-          <img alt="" src={side2} />
-        </div>
-        <div className="md:w-3/4 p-14">
-          <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3">
-            DURATION, MODE OF DELIVERY
-          </h2>
-          <p className="text-lg">
-            After successfully finishing the Blockchain Development online
-            courses, You will be awarded a certificate of completion. This
-            certificate serves as tangible proof of Your dedication, commitment,
-            and newly acquired skills in the specific subject matter covered by
-            the course. It signifies the culmination of their efforts in
-            engaging with course materials, completing assignments, and
-            mastering the concepts presented. The candidates will be assigned to
-            a mentor throughout the duration.
-          </p>
-        </div>
-      </div>
-
-      {/* ********************************************************************************* */}
-      <div className="bg-[#F7F4FD] p-5 leading-10 m-10 rounded-xl flex md:flex-row flex-col border-l-2 border-b-gray-300">
-        <div className=" container p-2 mx-auto">
-          <h2 className="md:text-xl font-headingFont py-2 xs:text-lg font-bold">
-            CERTIFICATION
-          </h2>
-          <p className="text-lg">
-            Upon completing the live project training, The students are to
-            submit an internship report to the mentor. The Blockchain Courses of
-            certificate will be awarded based on the candidate’s performance
-            during the internship.
-          </p>
-          <div className="py-3">
-            <Link to="/CourseRegistration">
-              {" "}
-              <button className="p-3 hover:bg-[#fff] text-white py-3 font-medium hover:animate-wiggle rounded-2xl text-lg bg-gradient-to-r from-cyan-500 to-[#CB77F7]">
-                Get Started
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="md:w-1/4 w-1/2  p-4 mx-auto">
-          <img className="rounded-2xl" src={Certificate} alt="" />
-        </div>
-      </div>
+      {/* ****************************************************************************** */}
+      {section3.map((e) => {
+        return (
+          <>
+            {" "}
+            <div className="mx-auto container flex md:flex-row xs:flex-col-reverse">
+              <div className="md:w-1/2 ">
+                <img alt="" src={side2} />
+              </div>
+              <div className="md:w-3/4 p-14">
+                <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3">
+                  {e.heading}
+                </h2>
+                <p className="text-lg">{e.paragraph}</p>
+              </div>
+            </div>
+          </>
+        );
+      })}
+      {/* ******************************************************************************* */}
+      {section4.map((e) => {
+        return (
+          <>
+            {" "}
+            <div className="bg-[#F7F4FD] p-5 leading-10 m-10 rounded-xl flex md:flex-row flex-col border-l-2 border-b-gray-300">
+              <div className=" container p-2 mx-auto">
+                <h2 className="md:text-xl font-headingFont py-2 xs:text-lg font-bold">
+                  {e.heading}
+                </h2>
+                <p className="text-lg">{e.paragraph}</p>
+                <div className="py-3">
+                  <Link to="/CourseRegistration">
+                    {" "}
+                    <button className="p-3 hover:bg-[#fff] text-white py-3 font-medium hover:animate-wiggle rounded-2xl text-lg bg-gradient-to-r from-cyan-500 to-[#CB77F7]">
+                      Get Started
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              <div className="md:w-1/4 w-1/2  p-4 mx-auto">
+                <img className="rounded-2xl" src={Certificate} alt="" />
+              </div>
+            </div>
+          </>
+        );
+      })}
     </>
   );
 }
