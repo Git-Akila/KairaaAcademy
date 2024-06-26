@@ -73,6 +73,31 @@ function BootCamp() {
     },
   ];
 
+  const section2 = [
+    {
+      id: 1,
+      heading1: " About The Program ",
+      paragraph:
+        " Blockchain Developer Bootcamp aims to provide an experience in Blockchain development to blockchain beginners. The sessions wil give a walkthrough of popular tools necessary for dApp development and a step-by-step guide to implementing decentralized application.",
+      heading2: "  What You Will Learn?",
+      headingList: [
+        "* Blockchain Fundamentals. ",
+        "* Cryptocurrency Expert.",
+        "* Navigating Cryptocurrencies.",
+        "* Blockchain for global Impact.",
+        "* Bitcoin Cryptocurrency.",
+        "* Cryptocurrency Beginner Guide.",
+      ],
+      heading3: " What You Will Earn?",
+      heading3List: [
+        "* A Blockchain-powered Certificate. ",
+        "* After Completing the Program.",
+        "* Well knowledge about Blockchain.",
+        "* Real world Contribution of Blockchain.",
+      ],
+    },
+  ];
+
   return (
     <>
       <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-3 ">
@@ -89,51 +114,47 @@ function BootCamp() {
           </div>
         </div>
       </div>
-      {/* *************************************************** */}
-      <div className="container mx-auto">
-        <div className="mx-10">
-          <h2 className="md:text-2xl font-headingFont text-lg font-bold py-2">
-            About The Program
-          </h2>
-          <p className="py-2 text-lg leading-10 text-medium">
-            Blockchain Developer Bootcamp aims to provide an experience in
-            Blockchain development to blockchain beginners. The sessions will
-            give a walkthrough of popular tools necessary for dApp development
-            and a step-by-step guide to implementing decentralized application.
-          </p>
-        </div>
-      </div>
-      <div className="container mx-auto">
-        <div className="mx-10 flex md:flex-row flex-col ">
-          <div className="md:w-1/2">
-            <h2 className="md:text-2xl text-lg font-headingFont font-bold py-2">
-              What You Will Learn?
-            </h2>
-            <ul className="py-2 text-lg leading-10 text-medium ">
-              <li>* Blockchain Fundamentals. </li>
-              <li>* Cryptocurrency Expert.</li>
-              <li>* Navigating Cryptocurrencies.</li>
-              <li> * Blockchain for global Impact</li>
-              <li>* Bitcoin Cryptocurrency.</li>
-              <li>* Cryptocurrency Beginner Guide.</li>
-            </ul>
-            <h2 className="md:text-2xl text-lg font-headingFont font-bold py-2">
-              What You Will Earn?
-            </h2>
-            <ul className="py-2 text-lg leading-10 text-medium ">
-              <li>* A Blockchain-powered Certificate. </li>
-              <li>
-                * After Completing the Program{" "}
-                <li>* Well knowledge about Blockchain. </li>
-                <li>* Real world Contribution of Blockchain.</li>
-              </li>
-            </ul>
-          </div>
-          <div className="md:w-1/2  p-2">
-            <img className="rounded-2xl " src={imagebanner} alt="" />
-          </div>
-        </div>
-      </div>
+      {/* *************************************************** **********************************************/}
+      {section2.map((e) => {
+        return (
+          <>
+            <div className="container mx-auto">
+              <div className="mx-10">
+                <h2 className="md:text-2xl font-headingFont text-lg font-bold py-2">
+                  {e.heading1}
+                </h2>
+                <p className="py-2 text-lg leading-10 text-medium">
+                  {e.paragraph}
+                </p>
+              </div>
+            </div>
+            <div className="container mx-auto">
+              <div className="mx-10 flex md:flex-row flex-col ">
+                <div className="md:w-1/2">
+                  <h2 className="md:text-2xl text-lg font-headingFont font-bold py-2">
+                    {e.heading2}
+                  </h2>
+                  <ul className="py-2 text-lg leading-10 text-medium ">
+                    {e.headingList.map((e1) => (
+                      <li> {e1}</li>
+                    ))}
+                  </ul>
+
+                  <h2 className="md:text-2xl text-lg font-headingFont font-bold py-2"></h2>
+                  <ul className="py-2 text-lg leading-10 text-medium ">
+                    {e.heading3List.map((e1) => (
+                      <li>{e1}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="md:w-1/2  p-2">
+                  <img className="rounded-2xl " src={imagebanner} alt="" />
+                </div>
+              </div>
+            </div>{" "}
+          </>
+        );
+      })}
       {/* ********************************** **********************************************************/}
       <div className="container mx-auto">
         <div className="mx-10">
@@ -176,41 +197,7 @@ function BootCamp() {
               </table>
             </div>
           </div>
-          {/* <table className="min-w-full divide-y m-4  divide-gray-200 border-2 border-gray-200">
-          <thead className="bg-gray-50  ">
-            <th className=" text-lg text-left pl-10 p-2  font-medium text-gray-800 uppercase tracking-wider">
-              Sessions
-            </th>
-            <th className=" font-medium text-center text-gray-800 uppercase tracking-wider">
-              Duration
-            </th>
-            <th className=" text-lg text-left pl-20 font-medium text-gray-800 uppercase tracking-wider">
-              Covered Topics
-            </th>
-          </thead>
-          <tbody className="bg-white divide-y text-lg   divide-gray-200">
-            {data.map((e) => {
-              return (
-                <>
-                  {" "}
-                  <tr className="p-5">
-                    <td className="p-5">{e.one}</td>
-                    <td className="p-5">{e.two}</td>
-                    {e.paragraph.map((e1) => {
-                      return (
-                        <>
-                          <tr className="px-20 p-5">
-                            <td className="px-20 leading-20 p-2 ">⋆ {e1}</td>
-                          </tr>
-                        </>
-                      );
-                    })}
-                  </tr>
-                </>
-              );
-            })}
-          </tbody>
-        </table> */}
+         
         </div>
       </div>
     </>
