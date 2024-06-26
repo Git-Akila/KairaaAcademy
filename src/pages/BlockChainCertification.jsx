@@ -7,6 +7,24 @@ import side2 from "../assets/Success-factors.png";
 import "../pages/Bootcamp.css";
 
 function BlockChainCertification() {
+  const section2 = [
+    {
+      id: 1,
+      heading1: " ABOUT THE PROGRAM",
+      paragraph:
+        "Certification of Blockchain Development Program offers the blockchain developers an exciting opportunity to work with the Research & Development Engineers and Scientists of Kairaa Blockchain Academy on its live Blockchain projects. The program will help the Blockchain Developers to apply their theoretical and practical knowledge and gain real project exposure to all facets of Blockchain development activities.",
+      heading2: " WHO IS IT FOR ?",
+      paragraph2:
+        " Certification of Blockchain Devlopment Program is open to candidates who’ve completed the Blockchain Development Online Courses(instructor-led/Self-paced) from Kairaa Blockchain Academy. The certification of Blockchain program will offer a platform for certified blockchain developers to apply their gained subject knowledge in making important decisions concerning the blockchain project they are working on.",
+      heading3: " WHAT YOU WILL LEARN...",
+      heading3List: [
+        " Conceptual view to frame high-level blockchain architecture.",
+        " Knowledge of designing blockchain-based solutions with best practices.",
+        "Knowledge of security considerations and risks for blockchain integration.",
+        " Understanding of integrating external services with blockchain architecture.",
+      ],
+    },
+  ];
   return (
     <>
       <div className="md:px-12 p-2 max-w-screen-2xl  mx-auto mt-10   ">
@@ -33,64 +51,42 @@ function BlockChainCertification() {
         </div>
       </div>
       {/* ****************************************************************************************** */}
-      <div className=" mx-auto container py-3">
-        <div className="mx-10">
-          <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
-            ABOUT THE PROGRAM
-          </h2>
-          <p className="text-lg">
-            Certification of Blockchain Development Program offers the
-            blockchain developers an exciting opportunity to work with the
-            Research & Development Engineers and Scientists of Kairaa Blockchain
-            Academy on its live Blockchain projects. The program will help the
-            Blockchain Developers to apply their theoretical and practical
-            knowledge and gain real project exposure to all facets of Blockchain
-            development activities.
-          </p>
-        </div>
-        <div className="mx-auto">
-          <div className="md:flex-row mx-10 flex flex-col py-3 leading-10">
-            <div className="md:w-1/2 mb-2 leading-10">
-              <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
-                WHO IS IT FOR ?
-              </h2>
-              <p className="text-lg mb-2">
-                Certification of Blockchain Devlopment Program is open to
-                candidates who’ve completed the Blockchain Development Online
-                Courses(instructor-led/Self-paced) from Kairaa Blockchain
-                Academy. The certification of Blockchain program will offer a
-                platform for certified blockchain developers to apply their
-                gained subject knowledge in making important decisions
-                concerning the blockchain project they are working on.
-              </p>
+      {section2.map((e) => {
+        return (
+          <>
+            <div className=" mx-auto container py-3">
+              <div className="mx-10">
+                <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
+                  {e.heading1}
+                </h2>
+                <p className="text-lg">{e.paragraph}</p>
+              </div>
+              <div className="mx-auto">
+                <div className="md:flex-row mx-10 flex flex-col py-3 leading-10">
+                  <div className="md:w-1/2 mb-2 leading-10">
+                    <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
+                      {e.heading2}
+                    </h2>
+                    <p className="text-lg mb-2">{e.paragraph2}</p>
 
-              <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3 ">
-                WHAT YOU WILL LEARN...
-              </h2>
-              <ul className="list-disc text-lg">
-                <li>
-                  Conceptual view to frame high-level blockchain architecture.
-                </li>
-                <li>
-                  Knowledge of designing blockchain-based solutions with best
-                  practices.
-                </li>
-                <li>
-                  Knowledge of security considerations and risks for blockchain
-                  integration.
-                </li>
-                <li>
-                  Understanding of integrating external services with blockchain
-                  architecture.
-                </li>
-              </ul>
+                    <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3 ">
+                      {e.heading3}
+                    </h2>
+                    <ul className="list-disc text-lg">
+                      {e.heading3List.map((e1) => (
+                        <li>{e1}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="md:w-1/2  shadow-[#e1ffe1cc] ">
+                    <img src={side1} alt="" className="" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="md:w-1/2  shadow-[#e1ffe1cc] ">
-              <img src={side1} alt="" className="" />
-            </div>
-          </div>
-        </div>
-      </div>
+          </>
+        );
+      })}
       {/* **************************************************************************************** */}
       <div className="mx-auto container flex md:flex-row xs:flex-col-reverse">
         <div className="md:w-1/2 ">
