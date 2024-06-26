@@ -1,5 +1,5 @@
 import React from "react";
-import ParticlesContainer from "./ParticlesContainer";
+
 import image from "../carouselimages/newBanner1.png";
 import aboutImg from "../carouselimages/newblock.png";
 import block1 from "../carouselimages/001-blockchain.png";

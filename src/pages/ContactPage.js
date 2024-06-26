@@ -1,10 +1,9 @@
 import React from "react";
-import {  IoLocationSharp } from "react-icons/io5";
+import { IoLocationSharp } from "react-icons/io5";
 
 import "../pages/Contact.css";
 
 const ContactPage = () => {
- 
   const branchDetails = [
     {
       id: 1,
@@ -35,7 +34,8 @@ const ContactPage = () => {
       <div className="flex justify-around md:mx-8 m-4 flex-col  md:flex-row">
         {/* contact us ++++++ chennai office details */}
         <div className="flex flex-col gap-8 items-center md:w-3/6 w-full  p-2 xs:m-4 md:m-4 h-full">
-          <iframe title="contactmap"
+          <iframe
+            title="contactmap"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.657021634854!2d76.93245844534019!3d11.007513406523273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8591b63cb9031%3A0xb7ccd4bb77643789!2sKairaa%20Blockchain%20Academy!5e0!3m2!1sen!2sin!4v1717837372242!5m2!1sen!2sin"
             width="650"
             height="600"

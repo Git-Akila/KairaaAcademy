@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import aboutImg from "../carouselimages/newblock.png";
 import secondImg from "../carouselimages/layer.png";
 import thirdImg from "../assets/third.png";
-import ParticlesContainer from "./ParticlesContainer";
+
 import {Link} from 'react-router-dom';
 
 const SliderComp = () => {
@@ -25,7 +25,7 @@ const SliderComp = () => {
       <div className="slider-container">
         <Slider {...settings} className="">
           <div>
-            <ParticlesContainer />
+           
             <div className="flex h-[60vh] md:h-[80vh] lg:h-[60vh] bg-[#F7F4FD] items-center justify-center gap-4">
               <div className=" md:w-2/3 w-full px-8 text-center md:px-16 font-bold text-[#1C1678]  z-10 ">
                 <h1 className="md:text-[40px] text-2xl font-headingFont  md:p-2 md:m-4 m-2 md:leading-[60px]">

@@ -38,12 +38,12 @@ function OtherCourse() {
                 <div className='flex gap-5 flex-col md:flex-row border-b-2 border-gray-400'>
                     <div className='md:w-1/2'>
                         <img src={e.image} className='rounded-lg' alt="" />
-                        {/* <div className='bg-blue-100 text-center'>
+                        <div className='bg-blue-100 text-center'>
                             <p className='text-2xl font-medium'>{e.title} </p>
 
                            
 
-                        </div> */}
+                        </div>
 
 
                     </div>

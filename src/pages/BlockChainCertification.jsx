@@ -14,80 +14,81 @@ function BlockChainCertification() {
           <div className="text-center flex md:flex-row xs:flex-col items-center gap-10 ">
             <div className="text-center">
               <div className="circle xxlarge shade1 ml-50 "> </div>
-                <div className=" circle xlarge shade2 ml-50 "></div>
-                <div className=" circle large shade3 ml-50 "></div>
-                <div className="circle mediun shade4 ml-50 "></div>
-                <div className="circle small shade5 ml-50 "></div>
-                <div className="flex justify-center items-center ">
-               <div className="md:w-3/9">
-                <h2 className="sm:text-4xl md:text-[42px] p-5 text-xl font-headingFont font-bold">
-                  Certification of 
-                Blockchain Development.
-                </h2></div>
+              <div className=" circle xlarge shade2 ml-50 "></div>
+              <div className=" circle large shade3 ml-50 "></div>
+              <div className="circle mediun shade4 ml-50 "></div>
+              <div className="circle small shade5 ml-50 "></div>
+              <div className="flex justify-center items-center ">
+                <div className="md:w-3/9">
+                  <h2 className="sm:text-4xl md:text-[42px] p-5 text-xl font-headingFont font-bold">
+                    Certification of Blockchain Development.
+                  </h2>
+                </div>
                 <div className="md:w-1/4">
-                <img className="rounded-2xl" src={Herocertificate1}  alt="" />
-                </div></div>
-            
+                  <img className="rounded-2xl" src={Herocertificate1} alt="" />
+                </div>
+              </div>
             </div>
-           
           </div>
         </div>
       </div>
       {/* ****************************************************************************************** */}
       <div className=" mx-auto container py-3">
         <div className="mx-10">
-        <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
-          ABOUT THE PROGRAM
-        </h2>
-        <p className="text-lg">
-          Certification of Blockchain Development Program offers the blockchain
-          developers an exciting opportunity to work with the Research &
-          Development Engineers and Scientists of Kairaa Blockchain Academy on
-          its live Blockchain projects. The program will help the Blockchain
-          Developers to apply their theoretical and practical knowledge and gain
-          real project exposure to all facets of Blockchain development
-          activities.
-        </p></div>
+          <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
+            ABOUT THE PROGRAM
+          </h2>
+          <p className="text-lg">
+            Certification of Blockchain Development Program offers the
+            blockchain developers an exciting opportunity to work with the
+            Research & Development Engineers and Scientists of Kairaa Blockchain
+            Academy on its live Blockchain projects. The program will help the
+            Blockchain Developers to apply their theoretical and practical
+            knowledge and gain real project exposure to all facets of Blockchain
+            development activities.
+          </p>
+        </div>
         <div className="mx-auto">
-        <div className="md:flex-row mx-10 flex flex-col py-3 leading-10">
-          <div className="md:w-1/2 mb-2 leading-10">
-            <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
-              WHO IS IT FOR ?
-            </h2>
-            <p className="text-lg mb-2">
-              Certification of Blockchain Devlopment Program is open to
-              candidates who’ve completed the Blockchain Development Online
-              Courses(instructor-led/Self-paced) from Kairaa Blockchain Academy.
-              The certification of Blockchain program will offer a platform for
-              certified blockchain developers to apply their gained subject
-              knowledge in making important decisions concerning the blockchain
-              project they are working on.
-            </p>
+          <div className="md:flex-row mx-10 flex flex-col py-3 leading-10">
+            <div className="md:w-1/2 mb-2 leading-10">
+              <h2 className="md:text-xl font-headingFont xs:text-lg font-bold py-3">
+                WHO IS IT FOR ?
+              </h2>
+              <p className="text-lg mb-2">
+                Certification of Blockchain Devlopment Program is open to
+                candidates who’ve completed the Blockchain Development Online
+                Courses(instructor-led/Self-paced) from Kairaa Blockchain
+                Academy. The certification of Blockchain program will offer a
+                platform for certified blockchain developers to apply their
+                gained subject knowledge in making important decisions
+                concerning the blockchain project they are working on.
+              </p>
 
-            <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3 ">
-              WHAT YOU WILL LEARN...
-            </h2>
-            <ul className="list-disc text-lg">
-              <li>
-                Conceptual view to frame high-level blockchain architecture.
-              </li>
-              <li>
-                Knowledge of designing blockchain-based solutions with best
-                practices.
-              </li>
-              <li>
-                Knowledge of security considerations and risks for blockchain
-                integration.
-              </li>
-              <li>
-                Understanding of integrating external services with blockchain
-                architecture.
-              </li>
-            </ul>
+              <h2 className="md:text-xl font-headingFont xs:lg font-bold py-3 ">
+                WHAT YOU WILL LEARN...
+              </h2>
+              <ul className="list-disc text-lg">
+                <li>
+                  Conceptual view to frame high-level blockchain architecture.
+                </li>
+                <li>
+                  Knowledge of designing blockchain-based solutions with best
+                  practices.
+                </li>
+                <li>
+                  Knowledge of security considerations and risks for blockchain
+                  integration.
+                </li>
+                <li>
+                  Understanding of integrating external services with blockchain
+                  architecture.
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/2  shadow-[#e1ffe1cc] ">
+              <img src={side1} alt="" className="" />
+            </div>
           </div>
-          <div className="md:w-1/2  shadow-[#e1ffe1cc] ">
-            <img src={side1} alt="" className="" />
-          </div></div>
         </div>
       </div>
       {/* **************************************************************************************** */}
@@ -137,8 +138,7 @@ function BlockChainCertification() {
           <img className="rounded-2xl" src={Certificate} alt="" />
         </div>
       </div>
-      
-      </>
+    </>
   );
 }
 
