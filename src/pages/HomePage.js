@@ -8,6 +8,10 @@ import SliderComp from '../Components/SliderComp';
 const HomePage = () => {
   return (
     <>
+    
+
+
+
     <SliderComp/>
        <Hero/>
       <Carousel/>

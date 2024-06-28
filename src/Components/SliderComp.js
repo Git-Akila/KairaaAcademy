@@ -22,7 +22,10 @@ const SliderComp = () => {
 
   return (
     <>
+  
       <div className="slider-container">
+      
+
         <Slider {...settings} className="">
           <div>
            
